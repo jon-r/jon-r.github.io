@@ -34,29 +34,28 @@ $serif: "aleo", Cambria, Times New Roman, Times, serif;
 
 %h-font {
   font-family: $serif;
-  line-height: 1.7;
-  @include tablet {
-    line-height: 1.4;
-  }
+  display: inline-block;
 }
 
 %p-font {
+
   font-family: $sans-serif;
 }
 
 h1 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: bold;
   padding-bottom: 0.25em;
+
 }
 
 h2 {
   @extend %text-reset;
   @extend %h-font;
   font-weight: bold;
-  font-size: 1.75em;
+  font-size: 2em;
 }
 
 h3 {
@@ -74,8 +73,7 @@ h4 {
 
 
 p {
-  @extend %text-reset;
-  @extend %p-font;
+
 }
 
 a {

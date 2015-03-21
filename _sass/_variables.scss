@@ -6,12 +6,12 @@
 @function jr-blue($n) {
   $saturation: 10% * (10 - $n);
   $lightness: 10% * $n;
-  @return hsl(200, $saturation, $lightness);
+  @return hsl(220, $saturation, $lightness);
 }
 
 @function jr-grey($n) {
   $lightness: 10% * $n;
-  @return hsl(200, 5%, $lightness);
+  @return hsl(220, 15%, $lightness);
 }
 
 $jr-emphasis: jr-blue(4);
@@ -30,19 +30,19 @@ $jr-text-hover: jr-grey(4.5);
   @return hsl(0, $saturation, $lightness);
 }
 
-$xNO-USE-example: hsl(200, 5%, 25%);
+$xNO-USE-example: hsl(220, 15%, 25%);
 
-$jr-margin: 1.5rem;
-$jr-border: 1px solid jr-grey(8);
+$jr-margin: 1rem;
+$jr-border: 2px solid jr-grey(1);
 $jr-shadow: 0 2px 4px rgba(jr-grey(1),0.5);
 
 // Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+//$black: #000;
+//$darkerGray: #222;
+//$darkGray: #333;
+//$gray: #666;
+//$lightGray: #eee;
+//$white: #fff;
 
 
 // Mobile breakpoints
