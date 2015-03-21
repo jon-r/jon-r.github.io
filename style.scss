@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "type";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -14,69 +15,16 @@
 /**************/
 
 html {
-  font-size: 100%;
+  font-size: 18px;
+  @include tablet {
+    font-size: 14px;
+  }
 }
 
 body {
-  background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
-h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  margin: 15px 0;
-}
-
-a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
-}
-
-ul {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
-ul {
-  list-style-type: none;
+  background: $jr-bg-light;
+  color: $jr-text-dark;
+  min-width: 320px;
 }
 
 img {
@@ -89,14 +37,14 @@ img {
 }
 
 // Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
+//::-moz-selection {
+//  color: $black;
+//  background: $lightGray;
+//}
+//::selection {
+//  color: $black;
+//  background: $lightGray;
+//}
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
