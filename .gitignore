@@ -7,3 +7,7 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+
+jekyll-buildit.bat
+jekyll-viewit.bat
+_old
