@@ -2,17 +2,62 @@
 layout: default
 ---
 
-<div class="posts">
+<div class="section-portfolio">
+  <header class="section-header">
+    <h2>Design</h2>
+  </header>
+
+  {% for post in site.portfolio %}
+  <article class="article-portfolio">
+
+    <img alt="{{ post.title }}" src="../images/FrontThumb/{{ post.title | slugify }}.jpg" >
+    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.sub-title }}</p>
+
+    <div class="entry">
+      {{ post.content | truncatewords:40}}
+    </div>
+
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+  </article>
+  {% endfor %}
+</div>
+
+<div class="section-posts">
+  <header class="section-header">
+    <h2>Technology</h2>
+  </header>
+
   {% for post in site.posts %}
-    <article class="post">
+  <article class="article-post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
-      </div>
+    <div class="entry">
+      {{ post.content | truncatewords:40}}
+    </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+  </article>
+  {% endfor %}
+</div>
+
+<div class="section-about">
+  <header class="section-header">
+    <h2>About</h2>
+  </header>
+
+  {% for post in site.about %}
+  <article class="article-about">
+
+    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.sub-title }}</p>
+
+    <div class="entry">
+      {{ post.content | truncatewords:40}}
+    </div>
+
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+  </article>
   {% endfor %}
 </div>

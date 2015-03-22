@@ -76,3 +76,9 @@ exclude:
     - jekyll-buildit.bat
     - jekyll-viewit.bat
     - _old
+
+collections:
+  portfolio:
+    output: true
+  about:
+    output: true

@@ -52,18 +52,12 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
-}
-
-.float-bottom {
-  position: absolute;
-  bottom:0;
-  width:inherit;
+  clear: both;
 }
 
 /*********************/
@@ -75,36 +69,26 @@ img {
 //
 .page-header {
   display: flex;
-  position: relative;
+  align-content: flex-end;
+  //position: fixed;
   height: 150px;
   border-bottom: jr-grey(4) solid 5px;
+  background:jr-grey(8);
 }
 
 .header-title {
   flex: 1 1 auto;
   padding-left: $jr-margin;
   position: relative;
-  background:jr-grey(8);
+
 }
 
-.header-social {
+.header-logo {
   width:210px;
 
   position: relative;
   background-color: jr-grey(2);
   border-right: $jr-border;
-  a {
-    width:calc(25% - 20px);
-    float:left;
-    margin: $jr-margin 10px;
-  }
-}
-
-.social-container {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: $jr-margin;
 }
 
 //
@@ -113,7 +97,7 @@ img {
 
 .page-sidebar {
   width:210px;
-  position: absolute;
+  position: fixed;
   top: 150px;
   border-right: $jr-border;
   height:calc(100% - 150px);
@@ -123,14 +107,18 @@ img {
 //
 // .main
 //
-
 .page-section {
   width:calc(100% - 210px);
-  position: absolute;
+  position: fixed;
   top: 150px;
   left: 210px;
   height:calc(100% - 150px);
   overflow-y: scroll;
+  padding: 3rem;
+}
+
+.section-header {
+  border-bottom: $jr-border;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
