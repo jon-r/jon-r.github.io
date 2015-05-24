@@ -8,26 +8,14 @@
 @import "reset";
 @import "variables";
 @import "type";
+@import "grid";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
 /**************/
+@import "base-layout";
 
-html {
-  font-size: 18px;
-  @include tablet {
-    font-size: 14px;
-  }
-}
-
-body {
-  background: $jr-bg-light;
-  @extend %text-reset;
-  @extend %p-font;
-  color: $jr-text-dark;
-  min-width: 320px;
-}
 
 img {
   max-width: 100%;
@@ -37,6 +25,14 @@ img {
 .gmnoprint img {
   max-width: none;
 }
+
+
+
+
+
+/*
+
+
 
 // Specify the color of the selection
 //::-moz-selection {
@@ -61,8 +57,8 @@ img {
 }
 
 /*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
+/* LAYOUT / SECTIONS *
+/*********************
 
 //
 // .pagehead
@@ -125,3 +121,5 @@ img {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 //@import "svg-icons";
+
+*/

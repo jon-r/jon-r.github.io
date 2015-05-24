@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    <meta name="author" content="{{ site.name }}" />
-    <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="description" content="{{ site.description }}">
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+</head>
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+<body>
+  <div class="container" >
 
-  <body>
-    <header class="page-header">
-      <div class="header-logo">
-        logo here
-      </div>
-      <div class="header-title">
-<!--        <div class="float-bottom">-->
-          <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }} </a> |</h1>
-          <h2 class="site-description">{{ site.description }}</h2>
-<!--        </div>-->
-      </div>
+    <menu class="main-menu">
+      <header class="page-header">
+        <div class="header-logo">logo img here</div>
+        <br>
+        <h1><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
+        <br>
+        <h4>{{ site.description }}</h4>
+      </header>
 
-    </header>
+      <ul class="header-links">
 
-    <menu class="page-sidebar">
+        <li><a href="{{ site.baseurl }}/development"><h2>Development</h2></a></li>
+        <li><a href="{{ site.baseurl }}"><h2>Web Design</h2></a></li>
+        <li><a href="{{ site.baseurl }}/about"><h2>About Me</h2></a></li>
+        <li><a href="{{ site.baseurl }}/contact"><h2>Contact</h2></a></li>
 
-
-      <div class="sidebar-social">
-        {% include svg-icons.html %}
-      </div>
+      </ul>
 
     </menu>
 
-    <section id="main" role="main" class="page-section">
+
+    <main>
 
       {{ content }}
 
-    </section>
+    </main>
 
-    {% include analytics.html %}
-  </body>
+  {% include analytics.html %}
+
+  </div>
+</body>
 </html>

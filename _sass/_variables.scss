@@ -24,11 +24,6 @@ $jr-text-dark: jr-grey(1);
 $jr-text-light: jr-grey(9);
 $jr-text-hover: jr-grey(4.5);
 
-@function jr-rhc-color($n) {
-  $saturation: 10% * (10 - $n);
-  $lightness: 10% * $n;
-  @return hsl(0, $saturation, $lightness);
-}
 
 $xNO-USE-example: hsl(220, 15%, 25%);
 
@@ -46,13 +41,18 @@ $jr-shadow: 0 2px 4px rgba(jr-grey(1),0.5);
 
 
 // Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 480px) {
+@mixin tablet {
+  @media screen and (min-width: 760px) {
     @content;
   }
 }
-@mixin tablet {
-  @media screen and (max-width: 1030px) {
+@mixin screen {
+  @media screen and (min-width: 1030px) {
+    @content;
+  }
+}
+@mixin screen-hd {
+  @media screen and (min-width: 1240px) {
     @content;
   }
 }
