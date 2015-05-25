@@ -1,20 +1,16 @@
 ---
 layout: default
 ---
-THIS IS SHIT
-{% for post in site.categories.design %}
-<article class="article-portfolio">
-
-  <h3>{{ post.title }}</h3>
-
-<!--  <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+{% for post in site.design %}
+<article class="article-design">
+  <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
   <p>{{ post.sub-title }}</p>
 
-  <div class="entry">
+  <div>
     {{ post.content | truncatewords:40}}
   </div>
 
-  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
+  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 </article>
 {% endfor %}
 

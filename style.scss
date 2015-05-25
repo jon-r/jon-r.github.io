@@ -17,109 +17,16 @@
 @import "layout-default/main";
 @import "layout-default/menu";
 
-img {
-  max-width: 100%;
-}
+/*****************/
+/* PAGE SPECIFIC */
+/*****************/
+
+@import "layout-pages/design-list";
+
+
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
 }
 
-
-
-
-
-/*
-
-
-
-// Specify the color of the selection
-//::-moz-selection {
-//  color: $black;
-//  background: $lightGray;
-//}
-//::selection {
-//  color: $black;
-//  background: $lightGray;
-//}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/*********************/
-/* LAYOUT / SECTIONS *
-/*********************
-
-//
-// .pagehead
-//
-.page-header {
-  display: flex;
-  align-content: flex-end;
-  //position: fixed;
-  height: 150px;
-  border-bottom: jr-grey(4) solid 5px;
-  background:jr-grey(8);
-}
-
-.header-title {
-  flex: 1 1 auto;
-  padding-left: $jr-margin;
-  position: relative;
-
-}
-
-.header-logo {
-  width:210px;
-
-  position: relative;
-  background-color: jr-grey(2);
-  border-right: $jr-border;
-}
-
-//
-// .page-sidebar
-//
-
-.page-sidebar {
-  width:210px;
-  position: fixed;
-  top: 150px;
-  border-right: $jr-border;
-  height:calc(100% - 150px);
-  background-color: $jr-bg-dark;
-}
-
-//
-// .main
-//
-.page-section {
-  width:calc(100% - 210px);
-  position: fixed;
-  top: 150px;
-  left: 210px;
-  height:calc(100% - 150px);
-  overflow-y: scroll;
-  padding: 3rem;
-}
-
-.section-header {
-  border-bottom: $jr-border;
-}
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-//@import "svg-icons";
-
-*/
