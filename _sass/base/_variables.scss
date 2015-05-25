@@ -41,18 +41,30 @@ $jr-shadow: 0 2px 4px rgba(jr-grey(1),0.5);
 
 
 // Mobile breakpoints
-@mixin tablet {
-  @media screen and (min-width: 760px) {
-    @content;
+
+//base size (min);
+$break-xs: 320px;
+//tablet
+$break-s: 768px;
+//screen
+$break-m: 1030px;
+//hd screen
+$break-l: 1240px;
+
+@mixin jr-size($media) {
+  @if $media == phoneOnly {
+    @media only screen and (max-width: $break-s) { @content; }
   }
-}
-@mixin screen {
-  @media screen and (min-width: 1030px) {
-    @content;
+  @if $media == tablet {
+    @media only screen and (min-width: $break-s + 1) { @content; }
   }
-}
-@mixin screen-hd {
-  @media screen and (min-width: 1240px) {
-    @content;
+  @if $media == tabletOnly {
+    @media only screen and (min-width: $break-s + 1) and (max-width: $break-m) { @content; }
+  }
+  @else if $media == screen {
+    @media only screen and (min-width: $break-m + 1) { @content; }
+  }
+  @else if $media == screen-hd {
+    @media only screen and (min-width: $break-l) { @content; }
   }
 }

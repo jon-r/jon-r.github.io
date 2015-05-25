@@ -5,17 +5,17 @@
 // IMPORTS
 //
 
-@import "reset";
-@import "variables";
-@import "type";
-@import "grid";
+@import "base/reset";
+@import "base/variables";
+@import "base/type";
+@import "base/grid";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
 /**************/
-@import "base-layout";
-
+@import "layout-default/main";
+@import "layout-default/menu";
 
 img {
   max-width: 100%;

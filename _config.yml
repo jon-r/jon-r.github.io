@@ -78,7 +78,14 @@ exclude:
     - _old
 
 collections:
-  portfolio:
+  design:
     output: true
-  about:
+  develop:
     output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

@@ -1,0 +1,44 @@
+html {
+  font-size: 14px;
+  @include jr-size(screen) {
+    font-size: 18px;
+  }
+}
+
+body {
+  background: $jr-bg-light;
+  @extend %text-reset;
+  @extend %p-font;
+  color: $jr-text-dark;
+  min-width: 320px;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin:0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  border:solid 1px red;
+}
+
+.sidebar {
+  width:100%;
+  text-align: center;
+  @include jr-size(screen) {
+    width:350px;
+    text-align: right;
+    padding-top: 15vh;
+  }
+}
+
+.page-header {
+  border-bottom: $jr-border;
+}
+
+main {
+  flex:auto;
+  min-width: 200px;
+  padding: $jr-margin;
+  max-height: 100vh;
+}

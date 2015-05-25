@@ -19,7 +19,7 @@
 <body>
   <div class="container" >
 
-    <menu class="main-menu">
+    <menu class="sidebar">
       <header class="page-header">
         <div class="header-logo">logo img here</div>
         <br>
@@ -28,7 +28,9 @@
         <h4>{{ site.description }}</h4>
       </header>
 
-      <ul class="header-links">
+      <input id="menu-toggler" class="menu-toggle" type="checkbox" >
+
+      <ul class="menu-links">
 
         <li><a href="{{ site.baseurl }}/development"><h2>Development</h2></a></li>
         <li><a href="{{ site.baseurl }}"><h2>Web Design</h2></a></li>
@@ -36,6 +38,7 @@
         <li><a href="{{ site.baseurl }}/contact"><h2>Contact</h2></a></li>
 
       </ul>
+      <label class="menu-button" for="menu-toggler"></label>
 
     </menu>
 
