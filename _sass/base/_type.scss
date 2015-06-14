@@ -38,7 +38,6 @@ $serif: "aleo", Cambria, Times New Roman, Times, serif;
 }
 
 %p-font {
-
   font-family: $sans-serif;
 }
 
@@ -47,8 +46,7 @@ h1 {
   @extend %h-font;
   font-size: 3em;
   font-weight: bold;
-  padding-bottom: 0.25em;
-
+  padding-bottom: 0.2em;
 }
 
 h2 {

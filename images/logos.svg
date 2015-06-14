@@ -7,13 +7,13 @@
 	</style>
 	<filter id="f1" >
 		<feFlood flood-color="#16181d" result="flood" />
-		<feOffset  in="SourceAlpha" dx="4" dy="4" result="offset" />
+		<feOffset  in="SourceAlpha" dx="2" dy="2" result="offset" />
 		<feComposite in2="offset" in="flood" operator="in" result="composite" />
 		<feBlend in="SourceGraphic" in2="composite" mode="normal" />
 	</filter>
 	<filter id="f2" >
 		<feFlood flood-color="#16181d" result="flood" />
-		<feOffset  in="SourceAlpha" dx="2" dy="2" result="offset" />
+		<feOffset  in="SourceAlpha" dx="1" dy="1" result="offset" />
 		<feComposite in2="offset" in="flood" operator="in" result="composite" />
 		<feBlend in="SourceGraphic" in2="composite" mode="normal" />
 	</filter>

@@ -2,15 +2,10 @@
 layout: default
 ---
 {% for post in site.design %}
-<article class="article-design">
-  <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-  <p>{{ post.sub-title }}</p>
-
-  <div>
-    {{ post.content | truncatewords:40}}
-  </div>
-
-  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+<article class="block">
+  <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl }}/images/placeholder.png" ></a>
+  <h3 class="block-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+  <p class="block-subtitle">{{ post.sub-title }}</p>
 </article>
 {% endfor %}
 

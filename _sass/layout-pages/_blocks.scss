@@ -1,0 +1,28 @@
+.block {
+  background: $jr-bg-med;
+  border: $jr-border;
+  padding-bottom: $jr-margin;
+}
+
+.block + .block {
+  margin-top: $jr-margin;
+}
+
+.block-title, .block-subtitle, .block-content {
+  padding-left: $jr-margin;
+  padding-right: $jr-margin;
+}
+
+.block-subtitle, .block-content {
+
+}
+
+.block-content {
+  background: white;
+}
+
+.block-icon {
+  width:256px;
+  float:right;
+}
+

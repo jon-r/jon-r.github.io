@@ -17,14 +17,15 @@
 </head>
 
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="masthead" >
+      <use xlink:href="#svg-banner" />
+    </svg>
+
   <div class="container" >
 
-    <menu class="sidebar">
+    <menu class="menu-bar">
       <header class="page-header">
-        <div class="header-logo">logo img here</div>
-        <br>
         <h1><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
-        <br>
         <h4>{{ site.description }}</h4>
       </header>
 
@@ -33,7 +34,7 @@
       <ul class="menu-links">
 
         <li><a href="{{ site.baseurl }}/"><h2>Web Design</h2></a></li>
-        <li><a href="{{ site.baseurl }}/development"><h2>Development</h2></a></li>
+        <li><a href="{{ site.baseurl }}/Web-Development"><h2>Development</h2></a></li>
         <li><a href="{{ site.baseurl }}/about"><h2>About Me</h2></a></li>
         <li><a href="{{ site.baseurl }}/contact"><h2>Contact</h2></a></li>
 
@@ -42,15 +43,18 @@
 
     </menu>
 
-
     <main>
 
       {{ content }}
 
     </main>
+  </div>
+
+  <footer>
+
+  </footer>
 
   {% include analytics.html %}
-
-  </div>
+  {% include svg.html %}
 </body>
 </html>
