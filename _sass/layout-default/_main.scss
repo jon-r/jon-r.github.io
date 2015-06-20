@@ -15,12 +15,14 @@ body {
 
 .masthead {
   width:100%;
-  height:150px;
+  height: 100px;
   border-bottom: $jr-border;
-  top:0;
-  position: absolute;
+
+  //position: absolute;
   @include jr-size(screen) {
+    top:0;
     position: fixed;
+    height:150px;
   };
 }
 
@@ -33,24 +35,31 @@ body {
 .menu-bar {
   width:100%;
   text-align: center;
-  //position: absolute;
-  height: 150px;
+//  margin-top: 150px;
   @include jr-size(screen) {
     position:fixed;
     width:350px;
-    text-align: right;
     top: 150px;
   }
 }
 
 .page-header {
-  border-top: $jr-border;
   border-bottom: $jr-border;
-  background-color: $jr-bg-light;
-  margin-top: 40px;
-  line-height: 50px;
+  padding: 5px 0;
+  color: jr-grey(2);
   @include jr-size(screen) {
-    margin-top: none;
+    margin-top: 1rem;
+  }
+}
+
+.logo {
+  height: 2rem;
+  stroke:jr-grey(2);
+  stroke-width:2;
+  display: inline-block;
+  @include jr-size(screen) {
+    height: 3rem;
+
   }
 }
 
