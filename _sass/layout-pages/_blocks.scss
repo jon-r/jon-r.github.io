@@ -1,21 +1,23 @@
 .block {
-  background: $jr-bg-med;
+  background: white;
+  position: relative;
   border: $jr-border;
-  padding-bottom: $jr-margin;
 }
 
 .block + .block {
   margin-top: $jr-margin;
 }
 
-.block-title, .block-subtitle, .block-content {
-  padding-left: $jr-margin;
-  padding-right: $jr-margin;
+.block-title {
+  padding: 0 $jr-margin $jr-margin;
+  position:absolute;
+  bottom:0;
+  background:$jr-bg-dark;
+  color: $jr-text-light;
+  width: 100%;
 }
 
-.block-subtitle, .block-content {
 
-}
 
 .block-content {
   background: white;
