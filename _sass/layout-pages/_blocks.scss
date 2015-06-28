@@ -1,20 +1,17 @@
 .block {
-  background: white;
   position: relative;
-  border: $jr-border;
 }
 
 .block + .block {
-  margin-top: $jr-margin;
+  margin-top: jr-spacer();
 }
 
 .block-title {
-  padding: 0 $jr-margin $jr-margin;
-  position:absolute;
-  bottom:0;
-  background:$jr-bg-dark;
-  color: $jr-text-light;
+  border-bottom: $jr-border;
+  padding: 2px jr-spacer();
   width: 100%;
+  text-align: right;
+  background-color: jr-blue(9);
 }
 
 

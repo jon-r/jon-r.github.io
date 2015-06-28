@@ -15,9 +15,9 @@
   .menu-button {
     display: block;
     position: absolute;
-    bottom:$jr-margin;
+    bottom: jr-spacer();
     padding-bottom: 5px;
-    left:$jr-margin;
+    left: jr-spacer();
     &::before {
       content: '+';
       font-size: 2rem;

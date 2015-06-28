@@ -2,6 +2,7 @@
 title: Red Hot Chilli – CMS Development
 layout: folio
 sub-title: Full Stack Production | Wordpress | AWS
+sort: c
 ---
 
 The front end of the website was built to the needs of the customer. The back end was built to speed up data entry of the company, as well as optimise site performance.

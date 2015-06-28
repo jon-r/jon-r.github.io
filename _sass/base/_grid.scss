@@ -1,7 +1,7 @@
 /*--- grid ----------------------------------------------------------------------------*/
 
 @mixin jr-width($rows, $full) {
-  width: calc(#{$rows*100%/$full } - #{$jr-margin});
+  width: calc(#{$rows*100%/$full } - #{jr-spacer()});
 }
 
 %flex-child-base {

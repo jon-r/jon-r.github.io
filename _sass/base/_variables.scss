@@ -28,6 +28,10 @@ $jr-text-hover: jr-grey(4.5);
 
 $xNO-USE-example: hsl(16, 15%, 25%);
 
+@function jr-spacer($n: 1) {
+  @return $jr-margin * $n
+}
+
 $jr-margin: 1rem;
 $jr-border: 2px solid jr-grey(1);
 $jr-shadow: 0 2px 4px rgba(jr-grey(1),0.5);
