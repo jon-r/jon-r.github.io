@@ -9,14 +9,14 @@ Some information about you!
 ## Employment
 
 ### 2013-2015: Red Hot Chilli Northwest, Warrington, WA2 7TT
-__Sales and Marketing Assistant__
+*- Sales and Marketing Assistant*
 
 - Promoting the business and its online presence
 - Research and data entry of stock
 - Market research, analytics, and assisting in expanding the company
 - Designing printed media for advertising
 
-__Web Designer
+*- Web Designer*
 
 - Building and setting up the company website
 - Assisting with network management

@@ -1,4 +1,4 @@
-$fonts: aleo ClearSans;
+$fonts: aleo Casper;
 
 $font-weights: (
   'Regular': normal normal,
@@ -24,17 +24,19 @@ $font-weight-keys: map-keys($font-weights);
   }
 }
 
-$sans-serif: "ClearSans", Helvetica, Arial, sans-serif;
+$sans-serif: "Casper", Helvetica, Arial, sans-serif;
 $serif: "aleo", Cambria, Times New Roman, Times, serif;
 
 %text-reset {
-  line-height: 1.2;
+  line-height: 1.3;
   color: inherit;
+  font-variant-ligatures: normal;
 }
 
 %h-font {
   font-family: $serif;
   display: inline-block;
+ // padding-bottom: 0.2em;
 }
 
 %p-font {
@@ -44,27 +46,26 @@ $serif: "aleo", Cambria, Times New Roman, Times, serif;
 h1 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 3em;
+  font-size: 3.129em;
   font-weight: bold;
-  padding-bottom: 0.2em;
 }
 
 h2 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 2em;
+  font-size: 2.353em;
 }
 
 h3 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 1.25em;
+  font-size: 1.769em;
 }
 
 h4 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 1.1em;
+  font-size: 1.33em;
   text-align: center;
   }
 

@@ -1,7 +1,13 @@
 html {
   font-size: 14px;
+  @include jr-size(tablet) {
+    font-size: 17px;
+  }
   @include jr-size(screen) {
     font-size: 18px;
+  }
+  @include jr-size(screen-hd) {
+    font-size: 19px;
   }
 }
 
@@ -13,23 +19,14 @@ body {
   min-width: 320px;
 }
 
-.masthead {
-  width:100%;
-  height: 100px;
-  border-bottom: $jr-border;
-
-  //position: absolute;
-  @include jr-size(screen) {
-    top:0;
-    position: fixed;
-    height:150px;
-  };
-}
 
 .container {
   position: relative;
-  max-width: 1200px;
   margin:0 auto;
+  max-width: 1200px;
+  @include jr-size(screen-hd) {
+    max-width: 1400px;
+  }
 }
 
 .menu-bar {
@@ -39,14 +36,16 @@ body {
   @include jr-size(screen) {
     position:fixed;
     width:350px;
-    top: 170px;
+    top: 5rem;
+  }
+  @include jr-size(screen-hd) {
+    width: 400px;
   }
 }
 
 .page-header {
   border-bottom: $jr-border;
   padding: 5px 0;
-  color: jr-grey(2);
   @include jr-size(screen) {
     margin-top: 1rem;
   }
@@ -54,12 +53,9 @@ body {
 
 .logo {
   height: 2rem;
-  stroke:jr-grey(2);
-  stroke-width:2;
   display: inline-block;
   @include jr-size(screen) {
     height: 3rem;
-
   }
 }
 
@@ -70,6 +66,9 @@ main {
     position:absolute;
     right:0;
     width:calc(100% - 350px);
+  }
+  @include jr-size(screen-hd) {
+    width:calc(100% - 400px);
   }
 }
 
