@@ -1,13 +1,13 @@
 html {
   font-size: 14px;
   @include jr-size(tablet) {
-    font-size: 17px;
+    font-size: 15px;
   }
   @include jr-size(screen) {
-    font-size: 18px;
+    font-size: 16px;
   }
   @include jr-size(screen-hd) {
-    font-size: 19px;
+    font-size: 17px;
   }
 }
 
@@ -19,6 +19,12 @@ body {
   min-width: 320px;
 }
 
+.background-svg {
+  position: fixed;
+  width:75vw;
+  height:50vh;
+  bottom:0;
+}
 
 .container {
   position: relative;

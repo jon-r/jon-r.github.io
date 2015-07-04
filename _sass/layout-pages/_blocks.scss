@@ -3,7 +3,7 @@
 }
 
 .block + .block {
-  margin-top: jr-spacer();
+//  margin-top: jr-spacer();
 }
 
 .block-title {
@@ -15,12 +15,12 @@
 }
 
 .block-entry {
-  &:first-letter {
-    font-size: 2rem;
-  }
   p {
     &:first-of-type {
-      font-size: 1.2rem;
+      font-size: 1.33rem;
+    }
+    & + p {
+      margin-top: jr-spacer();
     }
   }
 }

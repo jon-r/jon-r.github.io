@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-  <meta name="author" content="{{ site.name }}" />
-  <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}">
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-</head>
+  </head>
 
 <body>
+  <svg class="background-svg" xmlns="http://www.w3.org/2000/svg"
+       viewbox="0 0 240 80" preserveAspectRatio="xMinYMax meet">
+    <use xlink:href="#bg"  />
+  </svg>
 
   <div class="container" >
     <menu class="menu-bar">
+
         <header class="page-header">
           <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewbox="0 0 34 16">
             <use xlink:href="#jr-logo"  />
@@ -44,7 +48,9 @@
 
     <main>
 
-      {{ content }}
+
+  {{ content }}
+
 
     </main>
   </div>

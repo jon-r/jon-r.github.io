@@ -1,4 +1,4 @@
-$fonts: aleo Casper;
+$fonts: aleo Amble;
 
 $font-weights: (
   'Regular': normal normal,
@@ -24,7 +24,7 @@ $font-weight-keys: map-keys($font-weights);
   }
 }
 
-$sans-serif: "Casper", Helvetica, Arial, sans-serif;
+$sans-serif: "Amble", Helvetica, Arial, sans-serif;
 $serif: "aleo", Cambria, Times New Roman, Times, serif;
 
 %text-reset {

@@ -22,8 +22,25 @@
       <path d="m9.5,1 h5 v10 a4,4,0,0,1,-4,4 h-2" />
     </g>
 
+  <pattern stroke="#639ad9" patternUnits="userSpaceOnUse" id="hex" fill="none" height="18" width="30" stroke-width="1">
+      <path d="M5,14 l5 9 h10 l5-9 l-5-9 h-10z" />
+      <path d="M-10,5 l5 9 h10 l5-9 l-5-9 h-10z" />
+      <path d="M20,5 l5 9 h10 l5-9 l-5-9 h-10z" />
+  </pattern>
+
+  <mask id="m" maskUnits="userSpaceOnUse" >
+    <radialGradient id="g" cx="0.5" cy="0.5" r="0.5"  gradientTransform="scale(1,0.6)">
+      <stop stop-color="#fff" offset="0.2" />
+      <stop stop-color="#000" offset="0.8"/>
+    </radialGradient>
+    <rect width="100%" height="100%" fill="url(#g)" />
+  </mask>
+
+
   </defs>
+  <g mask="url(#m)">
+    <rect fill="url(#hex)" height="100%" width="100%" filter="url(#hue)"/>
+  </g>
 
 
- <use xlink:href="#bg-base" />
 </svg>

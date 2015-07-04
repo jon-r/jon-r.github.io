@@ -15,10 +15,27 @@
       <rect width="100%" height="100%" fill="url(#a)" opacity=".1" />
     </g>
 
-  <symbol id="jr-logo" fill="none"   stroke-width="2" >
-    <path stroke="#639ad9" d="M6-1L1 8l5 9h22l5-9-5-9" filter="url(#hue)" />
-    <path stroke="#3D455C" d="M16.5 1h3a4 4 0 0 1 0 8h-3 2q3 0 4 3t2.5 3M9.5 1h5v10a4 4 0 0 1-4 4h-2"/>
-  </symbol>
+    <symbol id="jr-logo" fill="none"   stroke-width="2" >
+      <path stroke="#639ad9" d="M6-1L1 8l5 9h22l5-9-5-9" filter="url(#hue)" />
+      <path stroke="#3D455C" d="M16.5 1h3a4 4 0 0 1 0 8h-3 2q3 0 4 3t2.5 3M9.5 1h5v10a4 4 0 0 1-4 4h-2"/>
+    </symbol>
+
+    <pattern stroke="#639ad9" patternUnits="userSpaceOnUse" id="hex" fill="none" height="18" width="30">
+      <path d="M5 14l5 9h10l5-9-5-9H10zM-10 5l5 9H5l5-9-5-9H-5zM20 5l5 9h10l5-9-5-9H25z"/>
+    </pattern>
+
+  <mask id="m" maskUnits="userSpaceOnUse" >
+    <radialGradient cx="0" cy="0.5" r="0.5" spreadMethod="pad" id="g">
+      <stop stop-color="#fff" offset="0" />
+      <stop stop-color="#000" offset="0.9"/>
+    </radialGradient>
+    <rect height="100%" width="100%" fill="url(#g)" />
+  </mask>
+
+    <g id="bg" >
+      <rect fill="url(#hex)" height="100%" width="100%" filter="url(#hue)" mask="url(#m)"/>
+    </g>
   </defs>
+
 
 </svg>

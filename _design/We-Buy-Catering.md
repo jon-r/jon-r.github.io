@@ -36,3 +36,9 @@ Simple blue/white colour palette. (think colour psychology)
 Google seo / ads /analytics
  [php templates]
 PHP to quickly build several microsites
+
+##future
+more svg
+smooth scroll
+amimated "how it works"
+cached html
