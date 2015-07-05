@@ -1,5 +1,5 @@
 ---
-title: Red Hot Chilli – CMS Development
+title: Red Hot Chilli – Back End
 layout: folio
 sub-title: Full Stack Production | Wordpress | AWS
 sort: c

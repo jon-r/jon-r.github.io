@@ -9,6 +9,8 @@
 .menu-links {
   font-style: italic;
   height: 2.5rem;
+  list-style: none;
+  text-decoration: none;
 }
 
 @include jr-size(phoneOnly) {
@@ -28,7 +30,8 @@
     display: none;
     width:100%;
     background: $jr-bg-light;
-    border-bottom: $jr-border
+    border-bottom: $jr-border;
+
   }
   .menu-toggle:checked {
     & + .menu-links {

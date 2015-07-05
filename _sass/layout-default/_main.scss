@@ -1,13 +1,7 @@
 html {
-  font-size: 14px;
+  font-size: 15px;
   @include jr-size(tablet) {
-    font-size: 15px;
-  }
-  @include jr-size(screen) {
-    font-size: 16px;
-  }
-  @include jr-size(screen-hd) {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -20,26 +14,41 @@ body {
 }
 
 .background-svg {
-  position: fixed;
-  width:75vw;
-  height:50vh;
-  bottom:0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  @include jr-size(tablet) {
+    bottom: 2.5rem;
+    display: block;
+  }
+  @include jr-size(screen) {
+    position: fixed;
+    height: 50vh;
+    bottom: 0;
+    width: 75vw;
+  }
 }
 
 .container {
   position: relative;
   margin:0 auto;
-  max-width: 1200px;
   @include jr-size(screen-hd) {
-    max-width: 1400px;
+    max-width: 1600px;
   }
 }
 
-.menu-bar {
+.side-bar {
   width:100%;
   text-align: center;
-//  margin-top: 150px;
+  position: relative;
+  margin-top: 50px;
+
+  @include jr-size(tablet) {
+    margin-top: 150px;
+  }
   @include jr-size(screen) {
+    margin-top: 0;
     position:fixed;
     width:350px;
     top: 5rem;
@@ -51,7 +60,8 @@ body {
 
 .page-header {
   border-bottom: $jr-border;
-  padding: 5px 0;
+  padding: 5px 6%;
+  background-color: rgba($jr-bg-light,0.5);
   @include jr-size(screen) {
     margin-top: 1rem;
   }
@@ -66,7 +76,7 @@ body {
 }
 
 main {
-  padding: jr-spacer();
+
   width:100%;
   @include jr-size(screen) {
     position:absolute;

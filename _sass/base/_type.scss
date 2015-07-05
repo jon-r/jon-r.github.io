@@ -28,7 +28,7 @@ $sans-serif: "Amble", Helvetica, Arial, sans-serif;
 $serif: "aleo", Cambria, Times New Roman, Times, serif;
 
 %text-reset {
-  line-height: 1.3;
+  line-height: 1.5;
   color: inherit;
   font-variant-ligatures: normal;
 }
@@ -46,26 +46,26 @@ $serif: "aleo", Cambria, Times New Roman, Times, serif;
 h1 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 3.129em;
+  font-size: 2.856em;
   font-weight: bold;
 }
 
 h2 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 2.353em;
+  font-size: 2.197em;
 }
 
 h3 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 1.769em;
+  font-size: 1.69em;
 }
 
 h4 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 1.33em;
+  font-size: 1.3em;
   text-align: center;
   }
 
@@ -76,7 +76,6 @@ p {
 
 a {
   color: inherit;
-  text-decoration: none;
   cursor: pointer;
   &:hover, &:active {
     color: $jr-text-hover;

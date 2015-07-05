@@ -5,8 +5,11 @@
 
 @function jr-blue($n) {
   $saturation: 10% * (10 - $n);
+  @if ($saturation > 50%) {
+    $saturation: 50%;
+  }
   $lightness: 10% * $n;
-  @return hsl(225, $saturation, $lightness);
+  @return hsl(205, $saturation, $lightness);
 }
 
 @function jr-grey($n) {
@@ -17,14 +20,13 @@
 $jr-emphasis: jr-blue(4);
 
 $jr-bg-dark: jr-grey(3);
-$jr-bg-med: jr-grey(8);
-$jr-bg-light: jr-grey(9.5);
-$jr-bg-hover: jr-grey(9);
+$jr-bg-med: jr-blue(7.5);
+$jr-bg-light: jr-grey(9);
+$jr-bg-hover: jr-blue(8.5);
 
 $jr-text-dark: jr-grey(3);
 $jr-text-light: jr-grey(9);
 $jr-text-hover: jr-grey(4.5);
-
 
 $xNO-USE-example: hsl(16, 15%, 25%);
 
@@ -33,7 +35,7 @@ $xNO-USE-example: hsl(16, 15%, 25%);
 }
 
 $jr-margin: 1rem;
-$jr-border: 2px solid jr-grey(1);
+$jr-border: 2px solid ;
 $jr-shadow: 0 2px 4px rgba(jr-grey(1),0.5);
 
 // Grays
