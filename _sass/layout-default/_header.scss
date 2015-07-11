@@ -1,0 +1,35 @@
+.page-header {
+  border-bottom: $jr-border;
+  padding:5px;
+  background-color: rgba($jr-bg-light,0.5);
+  position: relative;
+  @include jr-size(tablet) {
+    margin-top: 5rem;
+  }
+}
+
+.logo {
+  width: 5rem;
+  display: block;
+  margin-left: calc(50% - 2.5rem);
+}
+
+.menu-links {
+  font-style: italic;
+  height: 2.5rem;
+  list-style: none;
+  text-decoration: none;
+  a {
+    margin-right: jr-spacer();
+  }
+}
+
+.page-header,
+.menu-links {
+    width:100%;
+  text-align: center;
+  @include jr-size(tablet) {
+    margin-left: calc(50% - 20rem);
+    max-width: 40rem;
+  }
+}

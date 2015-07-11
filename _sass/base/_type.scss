@@ -77,6 +77,7 @@ p {
 a {
   color: inherit;
   cursor: pointer;
+  text-decoration: none;
   &:hover, &:active {
     color: $jr-text-hover;
   }

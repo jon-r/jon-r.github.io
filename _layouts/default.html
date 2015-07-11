@@ -16,42 +16,28 @@
   </head>
 
 <body>
+  <header class="page-header">
+    <svg class="background-svg" viewbox="0 0 240 80" preserveAspectRatio="xMinYMax meet">
+      <use xlink:href="#bg" />
+    </svg>
 
+    <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewbox="0 0 34 16">
+      <use xlink:href="#jr-logo" />
+    </svg>
 
-  <div class="container" >
-    <menu class="side-bar">
-        <svg class="background-svg" viewbox="0 0 240 80"
-             preserveAspectRatio="xMinYMax meet">
-          <use xlink:href="#bg"  />
-        </svg>
+    <h1><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
+  </header>
 
-        <header class="page-header">
-          <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewbox="0 0 34 16" >
-            <use xlink:href="#jr-logo" />
-          </svg>
+  <nav class="menu-links">
+    <a href="{{ site.baseurl }}/"><h3>Design</h3></a>
+    <a href="{{ site.baseurl }}/about"><h3>About</h3></a>
+    <a href="{{ site.baseurl }}/contact"><h3>Contact</h3></a>
+  </nav>
 
-        <h1><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
-        <h4>{{ site.description }}</h4>
-      </header>
-
-      <input id="menu-toggler" class="menu-toggle" type="checkbox" >
-
-      <ul class="menu-links">
-
-        <li><a href="{{ site.baseurl }}/"><h2>Web Design</h2></a></li>
-        <li><a href="{{ site.baseurl }}/about"><h2>About Me</h2></a></li>
-        <li><a href="{{ site.baseurl }}/contact"><h2>Contact</h2></a></li>
-
-      </ul>
-      <label class="menu-button" for="menu-toggler"></label>
-
-    </menu>
-
+  <div class="container">
     <main>
 
-
-  {{ content }}
-
+      {{ content }}
 
     </main>
   </div>

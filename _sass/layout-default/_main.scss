@@ -38,7 +38,7 @@ body {
   }
 }
 
-.side-bar {
+/*.side-bar {
   width:100%;
   text-align: center;
   position: relative;
@@ -56,24 +56,8 @@ body {
   @include jr-size(screen-hd) {
     width: 400px;
   }
-}
+}*/
 
-.page-header {
-  border-bottom: $jr-border;
-  padding: 5px 6%;
-  background-color: rgba($jr-bg-light,0.5);
-  @include jr-size(screen) {
-    margin-top: 1rem;
-  }
-}
-
-.logo {
-  height: 2rem;
-  display: inline-block;
-  @include jr-size(screen) {
-    height: 3rem;
-  }
-}
 
 main {
 

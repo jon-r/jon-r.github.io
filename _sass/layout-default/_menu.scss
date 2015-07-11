@@ -1,53 +1,40 @@
-.menu-toggle {
-  display: none;
-}
 
-.menu-button {
-  display: none;
-}
 
-.menu-links {
-  font-style: italic;
-  height: 2.5rem;
-  list-style: none;
-  text-decoration: none;
-}
-
-@include jr-size(phoneOnly) {
-  .menu-button {
-    display: block;
-    position: absolute;
-    bottom: jr-spacer();
-    padding-bottom: 5px;
-    left: jr-spacer();
-    &::before {
-      content: '+';
-      font-size: 2rem;
-    }
-  }
-  .menu-links {
-    position: absolute;
-    display: none;
-    width:100%;
-    background: $jr-bg-light;
-    border-bottom: $jr-border;
-
-  }
-  .menu-toggle:checked {
-    & + .menu-links {
-      display: block;
-    }
-    & ~ .menu-button::before {
-      content: '-';
-    }
-  }
-}
-
-@include jr-size(tabletOnly) {
-  .menu-links {
-    li {
-      float:left;
-      width:calc(100% / 3);
-    }
-  }
-}
+//@include jr-size(phoneOnly) {
+//  .menu-button {
+//    display: block;
+//    position: absolute;
+//    bottom: jr-spacer();
+//    padding-bottom: 5px;
+//    left: jr-spacer();
+//    &::before {
+//      content: '+';
+//      font-size: 2rem;
+//    }
+//  }
+//  .menu-links {
+//    position: absolute;
+//    display: none;
+//    width:100%;
+//    background: $jr-bg-light;
+//    border-bottom: $jr-border;
+//
+//  }
+//  .menu-toggle:checked {
+//    & + .menu-links {
+//      display: block;
+//    }
+//    & ~ .menu-button::before {
+//      content: '-';
+//    }
+//  }
+//}
+//
+//@include jr-size(tabletOnly) {
+//  .menu-links {
+//    li {
+//      float:left;
+//      width:calc(100% / 3);
+//    }
+//  }
+//}
