@@ -1,10 +1,9 @@
 .page-header {
   border-bottom: $jr-border;
   padding:5px;
-  background-color: rgba($jr-bg-light,0.5);
   position: relative;
   @include jr-size(tablet) {
-    margin-top: 5rem;
+    margin-top: jr-spacer(2);
   }
 }
 
@@ -20,7 +19,7 @@
   list-style: none;
   text-decoration: none;
   a {
-    margin-right: jr-spacer();
+    margin: 0 jr-spacer();
   }
 }
 

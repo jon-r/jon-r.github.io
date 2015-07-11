@@ -3,12 +3,14 @@ layout: default
 ---
 {% assign sorted_pages = (site.design | sort: 'sort') %}
 {% for page in sorted_pages %}
-<article class="block">
-  <div class="block-title">
+<article class="tile flex-2">
+  <div class="tile-title dark">
     <h3><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h3>
     <p>{{ page.sub-title }}</p>
   </div>
-  <a href="{{ site.baseurl }}{{ page.url }}"><img src="{{ site.baseurl }}/images/placeholder.png" ></a>
+  <a href="{{ site.baseurl }}{{ page.url }}">
+    <img src="{{ site.baseurl }}/images/placeholder.png" >
+  </a>
 </article>
 {% endfor %}
 

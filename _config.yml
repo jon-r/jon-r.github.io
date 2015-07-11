@@ -80,8 +80,6 @@ exclude:
 collections:
   design:
     output: true
-#  develop:
-#    output: true
 
 defaults:
   -

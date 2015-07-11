@@ -1,7 +1,7 @@
 ---
-title: Red Hot Chilli – Back End
+title: Red Hot Chilli – CMS
 layout: folio
-sub-title: Full Stack Production | Wordpress | AWS
+sub-title: Full Stack Production | Wordpress
 sort: c
 ---
 
@@ -17,7 +17,8 @@ The front end of the website was built to the needs of the customer. The back en
 ##Technical
 
 One key requirement for the site was to use the existing database. Stock is handled in a Microsoft Access database, recording all information on products, such as specs, sales records and refurbishment logs. Having the data in one place means amendments to products can be corrected near instantly, minimising mistakes from maintaining multiple duplicates of the same information. Not all the data will be public, but only entering data once saves a lot of time.
-[data “process” flow diagram]
+
+![data “process” flow diagram](/images/placeholder.png)
 Product info is recorded on the Access database. Key specs, such as power supply, product model number and dimensions are separated form a general description. I needed to modify some parts of the product table to include website specific information, such as “live on site”, but mostly the table remained untouched, and little redevelopment was needed on existing access forms.
 The site was built on WordPress, due to its excellent documentation and modification. Since WordPress relies on MySQL, and the company database was at the time on a locally hosted SQL database, I needed to make a few adjustments to combine the two. It was fairly easy to transfer data to mysql, so I ended up just merging the WP tables with the office ones, on a new database hosted online.
 

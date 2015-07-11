@@ -4,12 +4,20 @@
   background:rgba($jr-bg-light, 0.5);
 }
 
-.block-title {
+.tile {
+  @include jr-size(tablet) {
+    padding: jr-spacer(0.5);
+  }
+  @include jr-size(screen) {
+    padding: jr-spacer(2);
+  }
+}
+
+.tile-title {
   border-bottom: $jr-border;
   padding: 2px jr-spacer();
   width: 100%;
   text-align: right;
-  //background-color:$jr-bg-hover;
 }
 
 .block-entry {

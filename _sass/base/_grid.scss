@@ -1,11 +1,54 @@
 /*--- grid ----------------------------------------------------------------------------*/
 
 @mixin jr-width($rows, $full) {
+//  width: #{$rows*100%/$full }; put this on IE only?
   width: calc(#{$rows*100%/$full } - #{jr-spacer()});
+}
+
+%flex-parent-base {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items:stretch;
+}
+
+.flex-container {
+  @extend %flex-parent-base;
+  width:100%;
+}
+
+.flex-column {
+  @extend %flex-parent-base;
+  width:100%;
+  float:left;
+  @include jr-size(tablet) {
+    width:50%
+  }
 }
 
 %flex-child-base {
   @include jr-width(1,1);
-  margin-bottom: jr-spacer();
 }
 
+@for $i from 1 through 6 {
+  .flex-#{$i} {
+    @extend %flex-child-base;
+  }
+}
+
+@include jr-size(tablet) {
+  .flex-2,.flex-3,.flex-4 {
+    @include jr-width(1,2);
+  }
+  .flex-5,.flex-6 {
+    @include jr-width(1,3);
+  }
+}
+
+@include jr-size(screen) {
+  @for $i from 3 through 6 {
+    .flex-#{$i} {
+      @include jr-width(1,$i);
+    }
+  }
+}

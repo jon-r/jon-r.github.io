@@ -18,58 +18,23 @@ body {
   left: 0;
   bottom: 0;
   z-index: -1;
-  @include jr-size(tablet) {
-    bottom: 2.5rem;
-    display: block;
-  }
+  opacity: 0.5;
+
   @include jr-size(screen) {
     position: fixed;
     height: 50vh;
     bottom: 0;
     width: 75vw;
+    opacity: 1;
   }
 }
-
-.container {
-  position: relative;
-  margin:0 auto;
-  @include jr-size(screen-hd) {
-    max-width: 1600px;
-  }
-}
-
-/*.side-bar {
-  width:100%;
-  text-align: center;
-  position: relative;
-  margin-top: 50px;
-
-  @include jr-size(tablet) {
-    margin-top: 150px;
-  }
-  @include jr-size(screen) {
-    margin-top: 0;
-    position:fixed;
-    width:350px;
-    top: 5rem;
-  }
-  @include jr-size(screen-hd) {
-    width: 400px;
-  }
-}*/
 
 
 main {
-
+  position: relative;
+  margin:0 auto;
   width:100%;
-  @include jr-size(screen) {
-    position:absolute;
-    right:0;
-    width:calc(100% - 350px);
-  }
-  @include jr-size(screen-hd) {
-    width:calc(100% - 400px);
-  }
+  max-width: 1600px;
 }
 
 img {
