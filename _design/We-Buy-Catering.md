@@ -3,6 +3,7 @@ title: WeBuyCatering
 layout: folio
 sub-title: Static Web Design | Print Design
 sort: b
+responsive: true
 ---
 
 <span class="block-intro">Half of the challenge for second hand companies is sourcing the equipment. Unlike new stock that can often be supplied on demand, refurbishment retailers can only sell what they can get their hands on.

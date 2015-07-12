@@ -16,28 +16,28 @@
   </head>
 
 <body>
-  <header class="page-header">
-    <svg class="background-svg" viewbox="0 0 240 80" preserveAspectRatio="xMinYMax meet">
-      <use xlink:href="#bg" />
-    </svg>
+  <div class="primary-header {% if page.layout == 'folio' %}offset{% endif %}">
+    <header class="page-header">
+      <svg class="background-svg" viewbox="0 0 240 80" preserveAspectRatio="xMinYMax meet">
+        <use xlink:href="#bg" />
+      </svg>
 
-    <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewbox="0 0 34 16">
-      <use xlink:href="#jr-logo" />
-    </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewbox="0 0 34 16">
+        <use xlink:href="#jr-logo" />
+      </svg>
 
-    <h1><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
-  </header>
+      <h1><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
+    </header>
 
-  <nav class="menu-links">
-    <a href="{{ site.baseurl }}/"><h3>Design</h3></a>
-    <a href="{{ site.baseurl }}/about"><h3>About</h3></a>
-    <a href="{{ site.baseurl }}/contact"><h3>Contact</h3></a>
-  </nav>
+    <nav class="menu-links">
+      <a href="{{ site.baseurl }}/"><h3>Design</h3></a>
+      <a href="{{ site.baseurl }}/about"><h3>About</h3></a>
+      <a href="{{ site.baseurl }}/contact"><h3>Contact</h3></a>
+    </nav>
+  </div>
 
-  <main class="flex-container">
-
-    {{ content }}
-
+  <main >
+      {{ content }}
   </main>
 
   <footer>
@@ -46,5 +46,6 @@
 
   {% include analytics.html %}
   {% include svg.html %}
+  {%if page.responsive%}{% include svg-screens.html %}{% endif %}
 </body>
 </html>

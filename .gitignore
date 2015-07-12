@@ -11,3 +11,4 @@ package.json
 jekyll-buildit.bat
 jekyll-viewit.bat
 _old
+*.psd

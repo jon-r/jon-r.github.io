@@ -3,6 +3,7 @@ title: Red Hot Chilli - Shop
 layout: folio
 sub-title: Wordpress | SCSS | AI
 sort: a
+responsive: true
 ---
 
 <span class="block-intro"> Red Hot Chilli Northwest specialise in the sale of refurbished commercial catering equipment. They needed a site that would show off the company’s regularly updating product list, serving both UK and across Europe.</span>

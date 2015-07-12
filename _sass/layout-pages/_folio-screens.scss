@@ -1,0 +1,45 @@
+.screen-sizes {
+  position: relative;
+  widtH:100%;
+}
+
+
+/* SCREEN RATIOS:
+##phone:
+w 148
+h 262
+ratio: 0.56
+
+##tablet:
+w 228
+h 360
+ratio: 0.63
+
+##screen:
+w 864
+h 485
+ratio 1.78
+
+*/
+
+.screen-size-mobile,
+.screen-size-tablet {
+  position: absolute;
+  bottom:0;
+}
+
+.screen-size-screen {
+  width: 75%;
+  max-width: 900px;
+  margin-left:24%;
+}
+.screen-size-mobile {
+  right: 3%;
+  width: 15%;
+  max-width: 180px;
+}
+.screen-size-tablet {
+  left: 3%;
+  width: 25%;
+  max-width: 270px;
+}

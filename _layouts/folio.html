@@ -1,15 +1,38 @@
 ---
 layout: default
 ---
+<article class="block flex-container">
 
-<article class="block">
+  <!--TO DO
+  - put shine above the image
+  - higher size screenshots
+  -->
 
-  <div class="block-entry">
-    <img src="/images/placeholder.png" >
+  {%if page.responsive%}
+  <section class="screen-sizes flex-1">
+    <svg class="screen-size-screen" viewbox="0 0 840 640">
+      <use xlink:href="#samsung" />
+      <image xlink:href="{{ site.baseurl }}/images/{{ page.title }}/screen.jpg"
+             x="16" y="16" height="456" width="808"/>
+    </svg>
+    <svg class="screen-size-mobile" viewbox="0 0 172 362">
+      <use xlink:href="#iphone5" />
+      <image xlink:href="{{ site.baseurl }}/images/{{ page.title }}/mobile.jpg"
+             x="13" y="53" height="252" width="144" />
+    </svg>
+    <svg class="screen-size-tablet" viewbox="0 0 272 480">
+      <use xlink:href="#nexus7" />
+      <image xlink:href="{{ site.baseurl }}/images/{{ page.title }}/tablet.jpg"
+             width="226" height="360" x="22" y="56" />
+    </svg>
+  </section>
+  {% endif %}
+
+  <section class="block-entry flex-1">
 
     <h1>{{ page.title }}</h1>
 
     {{ content }}
-  </div>
+  </section>
 
 </article>
