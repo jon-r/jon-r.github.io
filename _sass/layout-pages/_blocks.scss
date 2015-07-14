@@ -1,7 +1,6 @@
 .block {
   position: relative;
   padding: jr-spacer(0.5) 0;
-  background:rgba($jr-bg-light, 0.5);
 }
 
 .tile {
@@ -22,6 +21,7 @@
 
 .block-entry {
   padding-top: jr-spacer();
+  max-width: 1000px;
   ul {
     margin-left: jr-spacer();
   }
@@ -32,16 +32,10 @@
 
 .block-intro {
   color: $jr-emphasis;
-
+  font-size: 1.2rem;
   @include jr-size(screen) {
     font-size: 1.4rem;
   }
-}
-
-.block-half {
-  float:left;
-  width:50%;
-  padding: 0 jr-spacer(0.5);
 }
 
 .block-icon {

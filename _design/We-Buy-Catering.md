@@ -6,10 +6,10 @@ sort: b
 responsive: true
 ---
 
-<span class="block-intro">Half of the challenge for second hand companies is sourcing the equipment. Unlike new stock that can often be supplied on demand, refurbishment retailers can only sell what they can get their hands on.
+<span class="block-intro flex-1">Half of the challenge for second hand companies is sourcing the equipment. Unlike new stock that can often be supplied on demand, refurbishment retailers can only sell what they can get their hands on.
 </span>
 
-<div class="block-half" >
+<div class="flex-2" >
 <h2>Features</h2>
 <ul>
   <li>Assorted leaflets, designed for multiple target markets.</li>
@@ -20,11 +20,14 @@ responsive: true
 </ul>
 </div>
 
-<div class="block-half" >
-<h2>Design</h2>
-<p>
-  The ‘We Buy Catering’ marketing campaign serves as an advert to purchase equipment for Red Hot Chilli Northwest. The microsite use a simple, one page design with basic mobile responsiveness. I also designed a range of mail leaflets targeted at a range of audiences.
-</p>
+<div class="flex-2" >
+  <h2>Design</h2>
+  <p>
+    The ‘We Buy Catering’ marketing campaign serves as an advert to purchase equipment for Red Hot Chilli Northwest.
+  </p>
+  <p>
+   The microsite use a simple, one page design with basic mobile responsiveness. I also designed a range of mail leaflets targeted at a range of audiences.
+  </p>
 </div>
 
 ![leaflet](/images/placeholder.png)
@@ -44,6 +47,7 @@ Leaflets came first. Multiple Audiences
 - Subtle extras to give a premium, polish (ie responsive, static bgs)
 ![Colour palette](/images/placeholder.png)
 Simple blue/white colour palette. (think colour psychology)
+also inc. fonts
 
 ##Technical
 [analytics]

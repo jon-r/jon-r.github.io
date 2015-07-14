@@ -6,9 +6,9 @@ sort: a
 responsive: true
 ---
 
-<span class="block-intro"> Red Hot Chilli Northwest specialise in the sale of refurbished commercial catering equipment. They needed a site that would show off the company’s regularly updating product list, serving both UK and across Europe.</span>
+<span class="block-intro flex-1"> Red Hot Chilli Northwest specialise in the sale of refurbished commercial catering equipment. They needed a site that would show off the company’s regularly updating product list, serving both UK and across Europe.</span>
 
-<div class="block-half" >
+<div class="flex-2" >
   <h2>Features</h2>
   <ul>
     <li>Layout developed from analytics and customer feedback</li>
@@ -18,7 +18,7 @@ responsive: true
   </ul>
 </div>
 
-<div class="block-half" >
+<div class="flex-2" >
   <h2>Design</h2>
   <p>
   The Website at Red Hot Chilli is an online catalogue, using a custom-made CMS system built around the WordPress database functions. The site’s frontend is a responsive, fully featured design with a very lightweight footprint. The backend works off an existing database designed in Microsoft Access.
@@ -27,7 +27,7 @@ responsive: true
 
 ![index](/images/placeholder.png)
 
-Using analytics from the previous site over two years, and from experience with customer inquiries, I have arranged the site to have the most requested information at the top of each page. The menu and search bar are at the same place on every page to aid navigation, with touch friendly buttons easy to use for mobile users.
+Using analytics from the previous site over two years, and from experience with customer feedback, I have arranged the site to have the most requested information at the top of each page. The menu and search bar are at the same place on every page to aid navigation, with touch friendly buttons easy to use for mobile users.
 
 The animated carousel was a more flashy replacement from the existing site. Although carousels are losing popularity, the team at Red Hot Chilli wanted a way to show off any special items that come along.
 
