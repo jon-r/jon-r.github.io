@@ -1,21 +1,21 @@
-.page-header {
-  border-bottom: $jr-border;
-  padding:5px;
-  position: relative;
-  @include jr-size(tablet) {
-    margin-top: jr-spacer(2);
-  }
+.primary-header {
+  width:100%;
+  padding:jr-spacer(0.5);
 }
 
-//temp
+.page-header, .menu-links  {
+  text-align: right;
+ // position: relative;
+}
+
+
 .offset {
-  display: none;
+
 }
 
 .logo {
-  width: 5rem;
-  display: block;
-  margin-left: calc(50% - 2.5rem);
+  height: 2rem;
+  display: inline-block;
 }
 
 .menu-links {
@@ -25,15 +25,5 @@
   text-decoration: none;
   a {
     margin: 0 jr-spacer();
-  }
-}
-
-.page-header,
-.menu-links {
-    width:100%;
-  text-align: center;
-  @include jr-size(tablet) {
-    margin-left: calc(50% - 20rem);
-    max-width: 40rem;
   }
 }

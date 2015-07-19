@@ -1,14 +1,17 @@
-.block {
-  position: relative;
-  padding: jr-spacer(0.5) 0;
-}
 
 .tile {
-  @include jr-size(tablet) {
-    padding: jr-spacer(0.5);
+  padding:1rem;
+  position: relative;
+  img {
+    transition-duration: 200ms;
   }
-  @include jr-size(screen) {
-    padding: jr-spacer(2);
+  &:not(:hover) img {
+    filter: grayscale(0.75);
+    -webkit-filter: grayscale(0.75);
+/*    &:hover {
+     filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    }*/
   }
 }
 
@@ -20,13 +23,9 @@
 }
 
 .block-entry {
-  padding-top: jr-spacer();
   max-width: 1000px;
-  ul {
-    margin-left: jr-spacer();
-  }
-  ul,p {
-    margin-bottom: jr-spacer();
+  p, ul {
+    padding: jr-spacer();
   }
 }
 

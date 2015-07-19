@@ -1,6 +1,7 @@
 ---
 title: Red Hot Chilli - Shop
 layout: folio
+ref: rhc-design
 sub-title: Wordpress | SCSS | AI
 sort: a
 responsive: true

@@ -7,13 +7,24 @@ html {
 
 body {
   background: $jr-bg-light;
+
   @extend %text-reset;
   @extend %p-font;
   color: $jr-text-dark;
   min-width: 320px;
+
 }
 
 .background-svg {
+  position: absolute;
+  left:0;
+  top:0;
+//  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/*.background-svg {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -27,16 +38,25 @@ body {
     width: 75vw;
     opacity: 1;
   }
-}
+}*/
 
-
-main {
-  position: relative;
-  margin:0 auto;
+.container, %container {
   width:100%;
   max-width: 1600px;
+  position: relative;
+  margin:auto;
 }
 
+
+.hero-box {
+  background: jr-grey(7);
+  position: relative;
+  border: $jr-bg-dark solid;
+  border-width: 2px 0;
+}
+
+
 img {
+  width: 100%;
   max-width: 100%;
 }

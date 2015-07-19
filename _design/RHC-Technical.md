@@ -1,6 +1,7 @@
 ---
 title: Red Hot Chilli – CMS
 layout: folio
+ref: rhc-tech
 sub-title: Full Stack Production | Wordpress
 sort: c
 ---

@@ -14,7 +14,7 @@
 
 .flex-container {
   @extend %flex-parent-base;
-  width:100%;
+  @extend %container;
 }
 
 .flex-column {
@@ -33,6 +33,7 @@
 @for $i from 1 through 6 {
   .flex-#{$i} {
     @extend %flex-child-base;
+    //max-width: ($break-l) / $i;
   }
 }
 

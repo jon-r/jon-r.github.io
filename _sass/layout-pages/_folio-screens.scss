@@ -1,3 +1,4 @@
+/*
 .screen-sizes {
   position: relative;
   widtH:100%;
@@ -5,7 +6,9 @@
   @include jr-size(tablet) {
     margin-bottom: jr-spacer(-3);
   }
+
 }
+*/
 
 
 /* SCREEN RATIOS:
@@ -35,8 +38,7 @@ ratio 1.78
 .screen-size-screen {
   width: 75%;
   max-width: 1024px;
-  margin-left:21%;
-  margin-bottom: 2%;
+  margin: 5px 21%;
 }
 .screen-size-mobile {
   right: 3%;
@@ -48,11 +50,4 @@ ratio 1.78
   width: 25%;
   max-width: 270px;
 }
-.screen-size-table {
-  position: absolute;
-  bottom: 0;
-  left: -5%;
-  z-index: -1;
-  width:110%;
-  height:15%;
-}
+

@@ -1,39 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg">
+<svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="hue" >
+<!--    <filter id="hue" >
       <feColorMatrix type="hueRotate" in="SourceGraphic" values="0" result="A">
         <animate attributeName="values" values="0; -100; 0" dur="60s" repeatCount="indefinite" />
       </feColorMatrix>
-    </filter>
+    </filter>-->
+
+    <linearGradient id="fade" >
+      <stop offset="0" stop-color="#858FAD"/>
+      <stop offset="30%" stop-color="#A3ABC2"/>
+      <stop offset="70%" stop-color="#A3ABC2"/>
+      <stop offset="100%" stop-color="#858FAD"/>
+    </linearGradient>
 
     <pattern id="a" patternUnits="userSpaceOnUse" width="100" height="90" viewBox="0 0 10 9" stroke="#fff" stroke-width=".5">
       <path d="M0-1L6 9.8M5-1l6 10.8M-5-1L1 9.8M4-1L-2 9.8M9-1L3 9.8M14-1L8 9.8m-9-7.2h12M-1 7h12" />
     </pattern>
 
     <g id="svg-banner">
-      <rect width="100%" height="100%" fill="#639ad9" filter="url(#hue)" />
+      <rect width="100%" height="100%" fill="#639ad9" />
       <rect width="100%" height="100%" fill="url(#a)" opacity=".1" />
     </g>
 
-    <symbol id="jr-logo" fill="none"   stroke-width="2" >
-      <path stroke="#639ad9" d="M6-1L1 8l5 9h22l5-9-5-9" filter="url(#hue)" />
+    <symbol id="jr-logo" fill="none" stroke-width="2" >
+      <path stroke="#639ad9" d="M6-1L1 8l5 9h22l5-9-5-9"  />
       <path stroke="#3D455C" d="M16.5 1h3a4 4 0 0 1 0 8h-3 2q3 0 4 3t2.5 3M9.5 1h5v10a4 4 0 0 1-4 4h-2"/>
     </symbol>
 
-    <pattern stroke="#639ad9" patternUnits="userSpaceOnUse" id="hex" fill="none" height="18" width="30">
+    <pattern stroke="#858FAD" patternUnits="userSpaceOnUse" id="hex" fill="none" height="18" width="30">
       <path d="M5 14l5 9h10l5-9-5-9H10zM-10 5l5 9H5l5-9-5-9H-5zM20 5l5 9h10l5-9-5-9H25z"/>
     </pattern>
 
-  <mask id="m" maskUnits="userSpaceOnUse" >
-    <radialGradient cx="0" cy="0.5" r="0.5" spreadMethod="pad" id="g">
-      <stop stop-color="#fff" offset="0" />
-      <stop stop-color="#000" offset="0.9"/>
-    </radialGradient>
-    <rect height="100%" width="100%" fill="url(#g)" />
-  </mask>
 
     <g id="bg" >
-      <rect fill="url(#hex)" height="100%" width="100%" filter="url(#hue)" mask="url(#m)"/>
+      <rect fill="url(#fade)" height="100%" width="100%" />
+      <rect fill="url(#hex)" height="100%" width="100%" />
     </g>
   </defs>
 

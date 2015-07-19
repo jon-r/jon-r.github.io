@@ -1,7 +1,8 @@
 ---
-title: WeBuyCatering
+title: We Buy Catering
 layout: folio
 sub-title: Static Web Design | Print Design
+ref: wbc
 sort: b
 responsive: true
 ---
