@@ -6,11 +6,11 @@ html {
 }
 
 body {
-  background: $jr-bg-light;
+  background: $jr-bg-med;
 
   @extend %text-reset;
   @extend %p-font;
-  color: $jr-text-dark;
+  color: $jr-text-light;
   min-width: 320px;
 
 }
@@ -49,14 +49,13 @@ body {
 
 
 .hero-box {
-  background: jr-grey(7);
+  background: $jr-bg-light;
   position: relative;
-  border: $jr-bg-dark solid;
-  border-width: 2px 0;
+  width: 100%;
 }
 
 
 img {
-  width: 100%;
+ // width: 100%;
   max-width: 100%;
 }

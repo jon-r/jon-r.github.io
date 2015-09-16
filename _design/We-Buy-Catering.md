@@ -5,10 +5,17 @@ sub-title: Static Web Design | Print Design
 ref: wbc
 sort: b
 responsive: true
+
+intro: Half of the challenge for second hand companies is sourcing the equipment. Unlike new stock that can often be supplied on demand, refurbishment retailers can only sell what they can get their hands on.
+
+images:
+ - One
+ - Two
+ - Three
+ - Four
+ - Five
 ---
 
-<span class="block-intro flex-1">Half of the challenge for second hand companies is sourcing the equipment. Unlike new stock that can often be supplied on demand, refurbishment retailers can only sell what they can get their hands on.
-</span>
 
 <div class="flex-2" >
 <h2>Features</h2>

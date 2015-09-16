@@ -1,9 +1,8 @@
 ---
 layout: default
 ---
-
 {%if page.responsive%}
-<section class="hero-box">
+<section class="hero-box" >
   <svg class="background-svg" viewbox="0 0 480 480" preserveAspectRatio="xMaxYMax slice">
     <use xlink:href="#bg" />
   </svg>
@@ -29,11 +28,21 @@ layout: default
   </div>
 </section>
 {% endif %}
-<section >
-  <article class="block-entry flex-container">
+<section class="block-entry flex-container">
 
-    <h1 class="flex-1">{{ page.title }}</h1>
+  <h1 class="flex-1">{{ page.title }}</h1>
 
-    {{ content }}
-  </article>
+  <span class="block-intro flex-1">{{ page.intro }}</span>
+
+</section>
+<section class="hero-box" >
+  {% for img in page.images %}
+  <div class="gallery-tile">
+    <img src="{{ site.baseurl }}/images/{{ page.ref }}/{{ img }}.jpg">
+  </div>
+  {% endfor %}
+</section>
+
+<section class="block-entry flex-container">
+  {{ content }}
 </section>

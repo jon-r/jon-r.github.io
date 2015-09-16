@@ -28,7 +28,7 @@ $sans-serif: "Amble", Helvetica, Arial, sans-serif;
 $serif: "aleo", Cambria, Times New Roman, Times, serif;
 
 %text-reset {
-  line-height: 1.25;
+  line-height: 1.2;
   color: inherit;
   font-variant-ligatures: normal;
 }
@@ -36,7 +36,6 @@ $serif: "aleo", Cambria, Times New Roman, Times, serif;
 %h-font {
   font-family: $serif;
   display: inline-block;
- // padding-bottom: 0.2em;
 }
 
 %p-font {
@@ -46,28 +45,35 @@ $serif: "aleo", Cambria, Times New Roman, Times, serif;
 h1 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 2.856em;
+  font-size: 3.842em;
   font-weight: bold;
 }
 
 h2 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 2.197em;
+  font-size: 2.744em;
 }
 
 h3 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 1.69em;
+  font-size: 1.96em;
 }
 
 h4 {
   @extend %text-reset;
   @extend %h-font;
-  font-size: 1.3em;
+  font-size: 1.4em;
   text-align: center;
   }
+
+h5 {
+  @extend %text-reset;
+  @extend %h-font;
+  font-size: 1em;
+  font-weight: bold;
+}
 
 
 p {

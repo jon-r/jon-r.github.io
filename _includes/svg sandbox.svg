@@ -19,7 +19,7 @@
 
     <g id="bg-base" filter="url(#hue)">
       <path d="m0,15l3,-13l115,5l2,8z" fill="#3e7abf" />
-      <path d="m0,15l3,23l116,-20l1,-3z" fill="#639ad9" />
+      <path d="m0,15l3,23l116,-20l1,-3z" fill="#6fbaf4" />
     </g>
 
     <g id="JR" stroke="#666" stroke-width="2" fill="none">
@@ -28,7 +28,7 @@
       <path d="m9.5,1 h5 v10 a4,4,0,0,1,-4,4 h-2" />
     </g>
 
-  <pattern stroke="#639ad9" patternUnits="userSpaceOnUse" id="hex" fill="none" height="18" width="30" stroke-width="1">
+  <pattern stroke="#6fbaf4" patternUnits="userSpaceOnUse" id="hex" fill="none" height="18" width="30" stroke-width="1">
       <path d="M5,14 l5 9 h10 l5-9 l-5-9 h-10z" />
       <path d="M-10,5 l5 9 h10 l5-9 l-5-9 h-10z" />
       <path d="M20,5 l5 9 h10 l5-9 l-5-9 h-10z" />

@@ -6,22 +6,18 @@ layout: default
 
 
 
-<section class="hero-box" >
-  <svg class="background-svg" viewbox="0 0 480 480" preserveAspectRatio="xMaxYMax slice">
-    <use xlink:href="#bg" />
-  </svg>
-
-  <div class="flex-container">
-  {% for page in sorted_pages %}
-  <article class="tile flex-2">
-    <div class="tile-title dark">
-      <h3><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h3>
-      <p>{{ page.sub-title }}</p>
+<section>
+    <div class="flex-container">
+    {% for page in sorted_pages %}
+    <article class="tile flex-2">
+      <div class="tile-title">
+        <h3><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h3>
+        <p>{{ page.sub-title }}</p>
+      </div>
+      <a href="{{ site.baseurl }}{{ page.url }}">
+        <img src="{{ site.baseurl }}/images/{{ page.ref }}/tile.jpg" >
+      </a>
+    </article>
+    {% endfor %}
     </div>
-    <a href="{{ site.baseurl }}{{ page.url }}">
-      <img src="{{ site.baseurl }}/images/{{ page.ref }}/tile.jpg" >
-    </a>
-  </article>
-  {% endfor %}
-  </div>
 </section>

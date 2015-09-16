@@ -3,13 +3,12 @@
 // VARIABLES
 //
 
+
+
 @function jr-blue($n) {
-  $saturation: 10% * (10 - $n);
-  @if ($saturation > 50%) {
-    $saturation: 50%;
-  }
+  $saturation: 5% * (10 - $n);
   $lightness: 10% * $n;
-  @return hsl(205, $saturation, $lightness);
+  @return hsl(225, $saturation, $lightness);
 }
 
 @function jr-grey($n) {
@@ -17,18 +16,19 @@
   @return hsl(225, 20%, $lightness);
 }
 
-$jr-emphasis: jr-blue(4);
+$jr-emphasis: #6fbaf4;
 
-$jr-bg-dark: jr-grey(3);
-$jr-bg-med: jr-blue(7.5);
-$jr-bg-light: jr-grey(9);
+$jr-bg-dark: jr-blue(2);
+$jr-bg-med: jr-blue(3);
+$jr-bg-light: jr-blue(9);
 $jr-bg-hover: jr-blue(8.5);
 
-$jr-text-dark: jr-grey(3);
-$jr-text-light: jr-grey(9);
+$jr-text-dark: jr-blue(3);
+$jr-text-med: jr-blue(8);
+$jr-text-light: jr-blue(9);
 $jr-text-hover: jr-grey(4.5);
 
-$xNO-USE-example: hsl(16, 15%, 25%);
+//$xNO-USE-example: hsl(16, 15%, 25%);
 
 @function jr-spacer($n: 1) {
   @return $jr-margin * $n

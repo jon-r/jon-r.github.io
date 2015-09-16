@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} {{ site.description }}</title>
 
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ site.description }}">
@@ -16,21 +16,24 @@
   </head>
 
 <body>
-  <div class="primary-header {% if page.layout == 'folio' %}offset{% endif %}">
-    <header class="page-header">
-      <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewbox="0 0 34 16">
-        <use xlink:href="#jr-logo" />
-      </svg>
+<header class="primary-header {% if page.layout == 'folio' %}offset{% endif %}">
+  <div class="header-title">
+    <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewbox="0 0 34 16">
+      <use xlink:href="#jr-logo" />
+    </svg>
 
-      <h1><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
-    </header>
+    <h1><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
 
-    <nav class="menu-links">
-      <a href="{{ site.baseurl }}/"><h3>Design</h3></a>
-      <a href="{{ site.baseurl }}/about"><h3>About</h3></a>
-      <a href="{{ site.baseurl }}/contact"><h3>Contact</h3></a>
-    </nav>
+    <br>
+    <h5 class="sub-header">{{ site.description }}</h5>
   </div>
+
+  <nav class="menu-links">
+    <a href="{{ site.baseurl }}/"><h3>Folio</h3></a>
+    <a href="{{ site.baseurl }}/about"><h3>About</h3></a>
+    <a href="{{ site.baseurl }}/contact"><h3>Contact</h3></a>
+  </nav>
+</header>
 
   <main>
       {{ content }}

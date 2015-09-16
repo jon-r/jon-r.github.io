@@ -1,13 +1,20 @@
 .primary-header {
   width:100%;
+  //height: 7rem;
   padding:jr-spacer(0.5);
+  background: $jr-bg-dark;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-.page-header, .menu-links  {
-  text-align: right;
- // position: relative;
+.sub-header {
+  color:$jr-emphasis;
 }
 
+.header-title {
+ // float: right;
+}
 
 .offset {
 
@@ -20,7 +27,7 @@
 
 .menu-links {
   font-style: italic;
-  height: 2.5rem;
+  //border: $jr-border;
   list-style: none;
   text-decoration: none;
   a {

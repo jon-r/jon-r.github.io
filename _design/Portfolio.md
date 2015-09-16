@@ -5,5 +5,11 @@ layout: folio
 sub-title: Flat File CMS | Jekyll | Markdown
 sort: d
 responsive: true
+images:
+ - One
+ - Two
+ - Three
+ - Four
+ - Five
 ---
 
