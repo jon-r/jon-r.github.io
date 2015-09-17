@@ -5,26 +5,23 @@ ref: rhc-design
 sub-title: Wordpress | SCSS | AI
 sort: a
 responsive: true
+
+intro: Red Hot Chilli Northwest specialise in the sale of refurbished commercial catering equipment. They needed a site that would show off the company’s regularly updating product list, serving both UK and across Europe.
 ---
 
-<span class="block-intro flex-1"> Red Hot Chilli Northwest specialise in the sale of refurbished commercial catering equipment. They needed a site that would show off the company’s regularly updating product list, serving both UK and across Europe.</span>
 
-<div class="flex-2" >
-  <h2>Features</h2>
-  <ul>
-    <li>Layout developed from analytics and customer feedback</li>
-    <li>Mobile-first responsive design</li>
-    <li>Bold, high contrast colour palette.</li>
-    <li>Custom-built CMS plugin. <a href="{{ site.baseurl }}/design/RHC-Technical">More</a></li>
-  </ul>
-</div>
+###Features
 
-<div class="flex-2" >
-  <h2>Design</h2>
-  <p>
-  The Website at Red Hot Chilli is an online catalogue, using a custom-made CMS system built around the WordPress database functions. The site’s frontend is a responsive, fully featured design with a very lightweight footprint. The backend works off an existing database designed in Microsoft Access.
-  </p>
-</div>
+- Layout developed from analytics and customer feedback
+- Mobile-first responsive design
+- Bold, high contrast colour palette.
+- Custom-built CMS plugin. [More]({{ site.baseurl }}/design/RHC-Technical)
+
+
+###Design
+
+The Website at Red Hot Chilli is an online catalogue, using a custom-made CMS system built around the WordPress database functions. The site’s frontend is a responsive, fully featured design with a very lightweight footprint. The backend works off an existing database designed in Microsoft Access.
+
 
 ![index](/images/placeholder.png)
 

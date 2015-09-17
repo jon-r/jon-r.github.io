@@ -34,7 +34,7 @@ $jr-text-hover: jr-grey(4.5);
   @return $jr-margin * $n
 }
 
-$jr-margin: 1rem;
+$jr-margin: 0.5rem;
 $jr-border: 2px solid ;
 $jr-shadow: 0 2px 4px rgba(jr-grey(1),0.5);
 
@@ -46,6 +46,13 @@ $jr-shadow: 0 2px 4px rgba(jr-grey(1),0.5);
 //$lightGray: #eee;
 //$white: #fff;
 
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 
 // Mobile breakpoints
 

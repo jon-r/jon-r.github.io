@@ -28,25 +28,27 @@ $sans-serif: "Amble", Helvetica, Arial, sans-serif;
 $serif: "aleo", Cambria, Times New Roman, Times, serif;
 
 %text-reset {
-  line-height: 1.2;
   color: inherit;
   font-variant-ligatures: normal;
 }
 
 %h-font {
   font-family: $serif;
+  line-height: 1.1;
   display: inline-block;
+  padding: 0.1em 0;
+  //font-weight: bold;
 }
 
 %p-font {
   font-family: $sans-serif;
+  line-height: 1.6;
 }
 
 h1 {
   @extend %text-reset;
   @extend %h-font;
   font-size: 3.842em;
-  font-weight: bold;
 }
 
 h2 {
@@ -72,19 +74,22 @@ h5 {
   @extend %text-reset;
   @extend %h-font;
   font-size: 1em;
-  font-weight: bold;
 }
 
 
 p {
-
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 a {
   color: inherit;
   cursor: pointer;
   text-decoration: none;
+  border-bottom: $jr-border;
   &:hover, &:active {
-    color: $jr-text-hover;
+    color: $jr-emphasis;
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,22 +16,22 @@
   </head>
 
 <body>
-<header class="primary-header {% if page.layout == 'folio' %}offset{% endif %}">
+<header class="block-dark is-spread">
   <div class="header-title">
-    <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewbox="0 0 34 16">
+    <svg xmlns="http://www.w3.org/2000/svg" class="header-logo" viewbox="0 0 34 16">
       <use xlink:href="#jr-logo" />
     </svg>
 
-    <h1><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
+    <h1 class="page-header"><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
 
-    <br>
+<!--    <br>-->
     <h5 class="sub-header">{{ site.description }}</h5>
   </div>
 
-  <nav class="menu-links">
-    <a href="{{ site.baseurl }}/"><h3>Folio</h3></a>
-    <a href="{{ site.baseurl }}/about"><h3>About</h3></a>
-    <a href="{{ site.baseurl }}/contact"><h3>Contact</h3></a>
+  <nav class="header-links">
+    <h3><a href="{{ site.baseurl }}/">Folio</a></h3>
+    <h3><a href="{{ site.baseurl }}/about">About</a></h3>
+    <h3><a href="{{ site.baseurl }}/contact">Contact</a></h3>
   </nav>
 </header>
 
@@ -39,8 +39,11 @@
       {{ content }}
   </main>
 
-  <footer>
-
+  <footer class="block-dark is-spread">
+    <p>&copy; Jon Richards 2015</p>
+    <svg xmlns="http://www.w3.org/2000/svg" class="footer-logo" viewbox="0 0 40 16">
+      <use xlink:href="#jr-logo-end" />
+    </svg>
   </footer>
 
   {% include analytics.html %}

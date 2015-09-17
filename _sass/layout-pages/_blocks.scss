@@ -1,5 +1,5 @@
 
-.tile {
+/*.tile {
   padding:1rem;
   position: relative;
   img {
@@ -8,10 +8,10 @@
   &:not(:hover) img {
     filter: grayscale(0.75);
     -webkit-filter: grayscale(0.75);
-/*    &:hover {
+    &:hover {
      filter: grayscale(0);
     -webkit-filter: grayscale(0);
-    }*/
+    }
   }
 }
 
@@ -40,9 +40,6 @@
 .block-icon {
   width:256px;
   float:right;
-}
-
-/* redo above -------------------------------------------------------------------------*/
 
 .gallery-tile {
   height: 200px;
@@ -51,3 +48,87 @@
     height:100%;
   }
 }
+}*/
+
+
+/* redo above -------------------------------------------------------------------------*/
+
+[class^="block"] {
+  position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:stretch;
+  width:100%;
+  padding: jr-spacer();
+
+  &.no-wrap{
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+  &.is-spread {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+}
+
+.block-dark {
+  background: $jr-bg-dark;
+}
+
+.block-white {
+  background: $jr-bg-light;
+  color: $jr-text-dark;
+}
+
+//separated for quick convenience
+$pad: jr-spacer(5);
+
+.text-container {
+  max-width: 1000px;
+  p:not(.text-intro), ul {
+    padding:jr-spacer() $pad;
+    list-style-position: inside;
+  }
+  h2, h3 {
+    margin: jr-spacer() 0;
+  }
+
+  img {
+    margin:0 #{-$pad};
+    width: calc(100% + #{$pad * 2});
+  }
+}
+
+.text-intro {
+  font-size: 1.3rem;
+  color: $jr-emphasis;
+}
+
+
+
+[class^="tiles-"] {
+  list-style: none;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.tiles-index {
+  background: $jr-bg-dark;
+  padding: jr-spacer();
+  margin: jr-spacer(2);
+  flex: 0 1 720px;
+}
+
+.tiles-folio {
+  flex:1 0 300px;
+  margin: 0 jr-spacer();
+}
+
+
+
+

@@ -16,29 +16,21 @@ images:
  - Five
 ---
 
+###Project
 
-<div class="flex-2" >
-<h2>Features</h2>
-<ul>
-  <li>Assorted leaflets, designed for multiple target markets.</li>
-  <li>Blue monochrome colour palette.</li>
-  <li>Minimal asymmetric design, designed to be quick to scan information.</li>
-  <li>SEO friendly content, responsive design</li>
-  <li>Simple php template allows quick duplication of design for different themes</li>
-</ul>
-</div>
+The ‘We Buy Catering’ marketing campaign serves as an advert to purchase equipment for Red Hot Chilli Northwest.
+The microsite use a simple, one page design with basic mobile responsiveness. I also designed a range of mail leaflets targeted at a range of audiences.
 
-<div class="flex-2" >
-  <h2>Design</h2>
-  <p>
-    The ‘We Buy Catering’ marketing campaign serves as an advert to purchase equipment for Red Hot Chilli Northwest.
-  </p>
-  <p>
-   The microsite use a simple, one page design with basic mobile responsiveness. I also designed a range of mail leaflets targeted at a range of audiences.
-  </p>
-</div>
+###Features
+- Assorted leaflets, designed for multiple target markets.
+- Blue monochrome colour palette.
+- Minimal asymmetric design, designed to be quick to scan information.
+- SEO friendly content, responsive design
+- Simple php template allows quick duplication of design for different themes
 
-![leaflet](/images/placeholder.png)
+###Print Design
+
+![leaflet]({{ site.baseurl }}/images/{{ page.ref }}/One.jpg)
 
 Leaflets came first. Multiple Audiences
 
@@ -48,23 +40,27 @@ Leaflets came first. Multiple Audiences
 - Letting agencies
 - Northwest focus
 
-![site design](/images/placeholder.png)
+###Web Design
+
+![site design]({{ site.baseurl }}/images/{{ page.ref }}/Two.jpg)
 
 - Lots of whitespace
 - Simple, clear content
 - Subtle extras to give a premium, polish (ie responsive, static bgs)
-![Colour palette](/images/placeholder.png)
-Simple blue/white colour palette. (think colour psychology)
-also inc. fonts
 
-##Technical
-[analytics]
-Google seo / ads /analytics
- [php templates]
-PHP to quickly build several microsites
+![Colour palette]({{ site.baseurl }}/images/{{ page.ref }}/Two.jpg)
 
-##future
-more svg
-smooth scroll
-amimated "how it works"
-cached html
+- Simple blue/white colour palette. (think colour psychology)
+- also inc. fonts
+
+###Technical
+- [analytics]
+- Google seo / ads /analytics
+- [php templates]
+- PHP to quickly build several microsites
+
+###Future
+- more svg
+- smooth scroll
+- amimated "how it works"
+- cached html
