@@ -3,8 +3,6 @@
 // VARIABLES
 //
 
-
-
 @function jr-blue($n) {
   $saturation: 5% * (10 - $n);
   $lightness: 10% * $n;
@@ -38,13 +36,6 @@ $jr-margin: 0.5rem;
 $jr-border: 2px solid ;
 $jr-shadow: 0 2px 4px rgba(jr-grey(1),0.5);
 
-// Grays
-//$black: #000;
-//$darkerGray: #222;
-//$darkGray: #333;
-//$gray: #666;
-//$lightGray: #eee;
-//$white: #fff;
 
 @mixin clearfix {
   &:after {

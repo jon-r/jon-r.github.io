@@ -8,8 +8,6 @@
 @import "base/reset";
 @import "base/variables";
 @import "base/type";
-@import "base/grid";
-// Syntax highlighting @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
@@ -17,13 +15,12 @@
 
 @import "layout-default/header";
 @import "layout-default/main";
-@import "layout-default/menu";
+@import "layout-pages/blocks";
 
 /*****************/
 /* PAGE SPECIFIC */
 /*****************/
 
-@import "layout-pages/blocks";
 @import "layout-pages/folio-screens";
 
 
