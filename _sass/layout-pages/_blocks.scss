@@ -35,9 +35,17 @@ $pad: jr-spacer(5);
 
 .text-container {
   max-width: 1000px;
-  p:not(.text-intro), ul {
+  p:not(.text-intro), ul, ol, h4 {
     padding:jr-spacer() $pad;
-    list-style-position: inside;
+  }
+  ul, ol {
+    -webkit-columns: 400px 2;
+       -moz-columns: 400px 2;
+            columns: 400px 2;
+    -webkit-column-gap: $pad;
+       -moz-column-gap: $pad;
+            column-gap: $pad;
+
   }
   h2, h3 {
     margin: jr-spacer() 0;
@@ -66,7 +74,7 @@ $pad: jr-spacer(5);
   background: $jr-bg-dark;
   padding: jr-spacer();
   margin: jr-spacer(2);
-  flex: 0 1 720px;
+  flex: 0 1 700px;
 }
 
 .tiles-folio {

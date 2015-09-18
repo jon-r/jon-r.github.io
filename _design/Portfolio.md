@@ -1,9 +1,10 @@
 ---
 title: Portfolio Website
 ref: folio
+
+sub-title: Design | Jekyll Website
+sort: 4
 layout: folio
-sub-title: Flat File CMS | Jekyll | Markdown
-sort: d
 responsive: true
 images:
  - One

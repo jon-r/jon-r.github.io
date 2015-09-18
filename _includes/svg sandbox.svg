@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 120 40">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="120" viewBox="-0.5 -1 16 2">
   <defs>
     <filter id="hue" >
       <feColorMatrix type="hueRotate" in="SourceGraphic" values="0" result="A">
@@ -44,8 +44,12 @@
 
 
   </defs>
-  <g >
-    <rect fill="url(#fade)" height="100%" width="100%" filter="url(#hue)"/>
+  <g stroke-width="1">
+    <path d="M0 0h3" stroke="#002B47" />
+    <path d="M3 0h3" stroke="#003D66" />
+    <path d="M6 0h3" stroke="#004C7E" />
+    <path d="M9 0h3" stroke="#99C7E4" />
+    <path d="M12 0h3" stroke="#ffffff" />
   </g>
 
 

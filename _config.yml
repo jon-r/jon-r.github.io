@@ -82,8 +82,7 @@ collections:
     output: true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
-      layout: "default"
+      layout: default

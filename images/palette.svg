@@ -1,0 +1,41 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="120" viewBox="-1 -2 38 4">
+  <style>
+    g:not(:target) {display:none}
+    g {font:italic 0.5px courier; fill:#fff; stroke-width:2} text {transform:translate(.1px,-.5px)}
+  </style>
+  <g id="wbc">
+    <path d="M0 0h6" stroke="#002B47"/>
+    <text>#002B47</text>
+    <path d="M6 0h6" stroke="#003D66"/>
+    <text x="6">#003D66</text>
+    <path d="M12 0h6" stroke="#004C7E"/>
+    <text x="12">#004C7E</text>
+    <path d="M18 0h6" stroke="#4985AD"/>
+    <text x="18">#4985AD</text>
+    <path d="M24 0h6" stroke="#99C7E4"/>
+    <text fill="#000" x="24">#99C7E4</text>
+    <path d="M30 0h6" stroke="#fff"/>
+    <text fill="#000" x="30">#FFFFFF</text>
+  </g>
+  <g id="rhc">
+    <path d="M0 0h4" stroke="#790606"/>
+    <text>#790606</text>
+    <path d="M4 0h4" stroke="#8F1515"/>
+    <text x="4">#8F1515</text>
+    <path d="M8 0h4" stroke="#AE1D1D"/>
+    <text x="8">#AE1D1D</text>
+    <path d="M12 0h4" stroke="#20252D"/>
+    <text x="12">#20252D</text>
+    <path d="M16 0h4" stroke="#2B313B"/>
+    <text x="16">#2B313B</text>
+    <path d="M20 0h4" stroke="#424A57"/>
+    <text x="20">#424A57</text>
+    <path d="M24 0h4" stroke="#5A6372"/>
+    <text x="24">#5A6372</text>
+    <path d="M28 0h4" stroke="#E4E4E7"/>
+    <text x="28" fill="#000">#E4E4E7</text>
+    <path d="M32 0h4" stroke="#F2F2F2"/>
+    <text x="32" fill="#000">#F2F2F2</text>
+  </g>
+</svg>

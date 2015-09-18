@@ -1,27 +1,31 @@
 ---
-title: Red Hot Chilli - Shop
-layout: folio
+title: Red Hot Chilli - FrontEnd
+
 ref: rhc-design
-sub-title: Wordpress | SCSS | AI
-sort: a
+sub-title: Design | Web Shop
+sort: 1
+layout: folio
 responsive: true
 
 intro: Red Hot Chilli Northwest specialise in the sale of refurbished commercial catering equipment. They needed a site that would show off the company’s regularly updating product list, serving both UK and across Europe.
 ---
 
+###Web Design
 
-###Features
+The Website at Red Hot Chilli is an online catalogue, using a custom-made CMS system built around the WordPress database functions. The site’s frontend is a responsive, fully featured design with a very lightweight footprint. The backend works off an existing database designed in Microsoft Access.
+
+####Toolkit (Frontend)
+
+I used **SCSS** for style, a **jQuery** to aid with scripting, and **Gulp** for post-processing. Code was handwritten with **Brackets**. Designs and vector logos were developed in **Illustrator CC**. My personal **Github** account was used for version control.
+
+####Features
 
 - Layout developed from analytics and customer feedback
 - Mobile-first responsive design
 - Bold, high contrast colour palette.
 - Custom-built CMS plugin. [More]({{ site.baseurl }}/design/RHC-Technical)
 
-
-###Design
-
-The Website at Red Hot Chilli is an online catalogue, using a custom-made CMS system built around the WordPress database functions. The site’s frontend is a responsive, fully featured design with a very lightweight footprint. The backend works off an existing database designed in Microsoft Access.
-
+####Layout
 
 ![index](/images/placeholder.png)
 
@@ -33,7 +37,12 @@ The animated carousel was a more flashy replacement from the existing site. Alth
 
 The biggest selling point of equipment are the photos. Red Hot Chilli make sure to use photos of the exact product for sale, with minimal editing to remove distracting surroundings.
 
-A common problem with commercial equipment is giving the customer a sense of scale. Commercial equipment tends to be much larger than the domestic equivalent, and this is not always portrayed in the photos. I decided to add a dynamic scale reference on each item, so to help customers visualise how large equipment is. 
+The downside to having s blank environment for the commercial equipment is giving the customer a sense of scale. Commercial equipment tends to be much larger than the domestic equivalent, and this is not always portrayed in the photos. I decided to add a dynamic scale reference on each item, so to help customers visualise how large equipment is.
+
+![scale](/images/placeholder.png)
+codepen here (scale)
+
+####Icons & Colours
 
 ![icons](/images/placeholder.png)
 
@@ -41,11 +50,14 @@ As well as adding simple visual cues for the customer, I designed a set of SVG i
 
 The black and white icons are from the Subway icon set by [Mariusz Ostrowski](http://www.pixle.pl). Other icons were designed in Illustrator.
 
-![color palette](/images/placeholder.png)
+![Colour palette]({{ site.baseurl }}/images/palette.svg#rhc)
 
-The Bold, high contrast colour scheme to highlight product features. The dark blue-greys frame the page, with the company’s red used for emphasis and focal points. 
+I have used a b old, high contrast colour scheme to highlight product features. The dark blue-greys frame the page, with the company’s red used for emphasis and focal points.
 
-##Future
+###Future
 
-- Plan to rework the products as Ajax objects, pulling items from the database to replace pagination by one page scrolling
-- Shopping cart/wishlist. Replace much of remaing imagery with SVG
+The next big feature I wish to add to the site is a form of shopping cart / wishlist. As a general rule, Red Hot Chilli do not want direct internet purchasing on the site, but it would be good for customers to mail a list of multiple items so we can offer delivery quotes. I am currently considering ways to use local storage or cookies to keep basic database records. I could also extend this to be a basic floor planner, combining a similar technique as the scale image.
+
+From a design point of view I also want to use more SVG elements where I can. Some flat graphics can easily be vectorised to work better on higher DPI devices.
+
+Finally, a general goal is improved ease of use. I have designed the site to target users that are less savvy with web shopping. However, I know there some things that may only make sense to me as a web power user. I plan to take close attention to feedback from my colleagues and customers, and figure out what works and what needs smoothing out.

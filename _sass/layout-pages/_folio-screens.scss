@@ -15,12 +15,12 @@
 ##phone:
 w 148
 h 262
-ratio: 0.56
+ratio: 0.56 (1.78)
 
 ##tablet:
 w 228
 h 360
-ratio: 0.63
+ratio: 0.63 (1.58)
 
 ##screen:
 w 864
@@ -28,6 +28,10 @@ h 485
 ratio 1.78
 
 */
+
+.container {
+  overflow: hidden;
+}
 
 .screen-size-mobile,
 .screen-size-tablet {

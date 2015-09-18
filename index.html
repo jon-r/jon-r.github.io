@@ -7,7 +7,7 @@ layout: default
   {% for page in sorted_pages %}
   <li class="tiles-index">
     <a href="{{ site.baseurl }}{{ page.url }}">
-        <h3><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h3>
+        <h3><a href="{{ site.baseurl }}{{ page.url | within: design }}">{{ page.title }}</a></h3>
         <h5 class="sub-header">{{ page.sub-title }}</h5>
       <img src="{{ site.baseurl }}/images/{{ page.ref }}/tile.jpg" >
     </a>
