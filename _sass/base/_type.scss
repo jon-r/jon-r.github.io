@@ -88,7 +88,7 @@ a {
   color: inherit;
   cursor: pointer;
   text-decoration: none;
-  border-bottom: $jr-border;
+  border-bottom: solid 2px $jr-emphasis;
   &:hover, &:active {
     color: $jr-emphasis;
   }

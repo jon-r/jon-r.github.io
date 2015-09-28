@@ -34,32 +34,22 @@ layout: default
 
 {% endif %}
 <section class="block-dark">
-  {{ collection.all_types }}
   <article class="text-container">
     <h2>{{ page.title }}</h2>
 
     <p class="text-intro">{{ page.intro }}</p>
 
-    {% for pg in pages %}
-      {% if pg.url == page.url %}
-
-        {% capture pagePlus %}{{ forloop.index0 | plus: 1 }}{% endcapture %}
-
-      {% if pages[pagePlus] %}
-       {{ pages[pagePlus].url }}
-      {% else %}
-      {{pagePlus}}
-      {% endif %}
-
-      {% endif %}
-    {% endfor %}
   </article>
-
 </section>
+
+<section class="block-dark">
+  <img width="100%" src="{{ site.baseurl }}/images/{{ page.ref }}/first.jpg">
+</section>
+
 <ul class="block-dark no-wrap" >
   {% for img in page.images %}
   <li class="tiles-folio">
-    <img src="{{ site.baseurl }}/images/{{ page.ref }}/{{ img }}.jpg">
+    <img src="{{ site.baseurl }}/images/{{ page.ref }}/{{ img }}-thumb.jpg">
   </li>
   {% endfor %}
 </ul>

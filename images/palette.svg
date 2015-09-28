@@ -4,6 +4,7 @@
     g:not(:target) {display:none}
     g {font:italic 0.5px courier; fill:#fff; stroke-width:2} text {transform:translate(.1px,-.5px)}
   </style>
+  <path fill="#8b92a7" d="M-1-2h38v4h-38" />
   <g id="wbc">
     <path d="M0 0h6" stroke="#002B47"/>
     <text>#002B47</text>

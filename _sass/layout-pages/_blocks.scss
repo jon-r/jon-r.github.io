@@ -34,7 +34,9 @@
 $pad: jr-spacer(5);
 
 .text-container {
+  width:100%;
   max-width: 1000px;
+
   p:not(.text-intro), ul, ol, h4 {
     padding:jr-spacer() $pad;
   }
@@ -53,6 +55,7 @@ $pad: jr-spacer(5);
 
   img {
     margin:0 #{-$pad};
+   // max-width: 100%;
     width: calc(100% + #{$pad * 2});
   }
 }
