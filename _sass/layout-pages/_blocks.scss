@@ -81,8 +81,16 @@ $pad: jr-spacer(5);
 }
 
 .tiles-folio {
-  flex:1 0 300px;
+  flex:1 0 200px;
   margin: 0 jr-spacer();
+}
+
+.tiles-image {
+  flex:1 1 auto;
+  margin: 0 jr-spacer();
+  img {
+    width:100%;
+  }
 }
 
 

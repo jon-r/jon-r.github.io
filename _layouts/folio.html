@@ -29,7 +29,10 @@ layout: default
 {% else %}
 
 <section class="block-white">
-  <img width="100%" src="{{ site.baseurl }}/images/{{ page.ref }}/banner.jpg">
+  <picture class="tiles-image">
+    <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/banner-small.jpg" media="(max-width: 640px)">
+    <img src="{{ site.baseurl }}/images/{{ page.ref }}/banner.jpg">
+  </picture>
 </section>
 
 {% endif %}
@@ -43,7 +46,11 @@ layout: default
 </section>
 
 <section class="block-dark">
-  <img width="100%" src="{{ site.baseurl }}/images/{{ page.ref }}/first.jpg">
+  <picture class="tiles-image">
+    <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/first-small.jpg" media="(max-width: 640px)">
+    <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/first-hd.jpg" media="(min-width: 1024px)">
+    <img  src="{{ site.baseurl }}/images/{{ page.ref }}/first.jpg" alt="{{ page.title }}">
+  </picture>
 </section>
 
 <ul class="block-dark no-wrap" >

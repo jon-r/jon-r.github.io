@@ -10,9 +10,9 @@ responsive: true
 intro: Half of the challenge for second hand companies is sourcing the equipment. Unlike new stock that can often be supplied on demand, refurbishment retailers can only sell what they can get their hands on.
 
 images:
- - One #multisite
  - leaflet1
  - old-designs
+ - multiple
 
 ---
 
@@ -57,7 +57,7 @@ In a similar vein to the website, I designed a range of postcard sized flyers to
 
 They were designed to match the blue/white style of the website, to encourage consistency and a professional touch.
 
-![leaflet]({{ site.baseurl }}/images/{{ page.ref }}/One.jpg)
+![leaflet]({{ site.baseurl }}/images/{{ page.ref }}/leaflets.jpg)
 
 ###Future
 - smooth scroll
