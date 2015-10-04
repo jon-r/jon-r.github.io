@@ -9,10 +9,10 @@ responsive: true
 
 intro: Red Hot Chilli Northwest specialise in the sale of refurbished commercial catering equipment. They needed a site that would show off the company’s regularly updating product list, serving both UK and across Europe.
 
-#images
-  #1 printed stuff
-  #2 old designs
-  #3 tablet/mobile examples
+images:
+  - early_designs
+  - One #2 printed
+  - Two #3 tablet/mobile examples
 ---
 
 ###Web Design

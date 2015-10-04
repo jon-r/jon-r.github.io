@@ -9,8 +9,8 @@ intro: The front end of the website needs to be built to the needs of the custom
 
 images:
   - shop_compile
-  - One #plugin breakdown
-  - Two #item tile breakdown
+  - shop_flow
+  - Two
 ---
 
 ###Web Development
@@ -68,7 +68,7 @@ Working with a colleague, we added several forms in access to deal with the addi
 
 The carousel is animated through a simple timer in JavaScript, shuffling classes that slide in and out the templates. I have used extra css classes, (added by php) to format text in a few basic layouts.
 
-![images to site](/images/placeholder.png)
+![style guide]({{ site.baseurl }}/images/{{ page.ref }}/img_sync.jpg)
 
 I made a short batch script to upload all images via SSH. This is much faster than previous CMS uploading methods I have used in the past. The one issue is that product Images must be organised by reference number. However, this encourages good naming conventions and image cataloguing, which can never be a bad thing.
 
