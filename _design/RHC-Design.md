@@ -65,8 +65,6 @@ I have used a bold, high contrast colour scheme to highlight product features. T
 
 ![Colour palette]({{ site.baseurl }}/images/palette.svg#rhc)
 
-
-
 ###Future
 
 The next big feature I wish to add to the site is a form of shopping cart / wishlist. It would be good for customers to mail a list of multiple items so we can offer delivery quotes. I am currently considering ways to use local storage or cookies to keep basic database records. I could also extend this to be a basic floor planner, combining a similar technique as the scale image.
