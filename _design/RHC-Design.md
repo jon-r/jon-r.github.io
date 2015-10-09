@@ -11,7 +11,7 @@ intro: Red Hot Chilli Northwest specialise in the sale of refurbished commercial
 
 images:
   - early_designs
-  - One #2 printed
+  - brochure
   - Two #3 tablet/mobile examples
 ---
 

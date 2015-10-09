@@ -36,7 +36,7 @@ layout: default
 </section>
 
 {% endif %}
-<section class="block-dark">
+<section class="block">
   <article class="text-container">
     <h2>{{ page.title }}</h2>
 
@@ -45,7 +45,7 @@ layout: default
   </article>
 </section>
 
-<section class="block-dark">
+<section class="block">
   <picture class="tiles-image">
     <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/first-small.jpg" media="(max-width: 640px)">
     <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/first-hd.jpg" media="(min-width: 1024px)">
@@ -53,7 +53,7 @@ layout: default
   </picture>
 </section>
 
-<ul class="block-dark no-wrap" >
+<ul class="block no-wrap" >
   {% for img in page.images %}
   <li class="tiles-folio">
     <img src="{{ site.baseurl }}/images/{{ page.ref }}/{{ img }}-thumb.jpg">

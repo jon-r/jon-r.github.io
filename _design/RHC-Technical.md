@@ -93,5 +93,5 @@ I have used VBA on the database to log changes, which links to a simple php scri
 
 
 ###Future
-- Lazy loading images/product lists (these are biggest performance hits on site)
+Lazy loading images/product lists (these are biggest performance hits on site)
 

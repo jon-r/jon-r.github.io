@@ -55,7 +55,7 @@ Originally, I just made a copy/paste collection of sites. I made individual twea
 
 I decided to create a PHP tamplate with a list of variables that covered each site. The core php was taken from a root location, and each page remained consistent and easily maintained. Instead of spending time readjusting several pages, linking sevaral images, etc, All that was needed was about 10 lines of php variables and a couple of extra pictures.
 
-![framework, perhaps using placeholders](/images/placeholder.png)
+![framework template]({{ site.baseurl }}/images/{{ page.ref }}/template.jpg)
 
 ####Print Design
 
