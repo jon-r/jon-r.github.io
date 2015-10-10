@@ -1,22 +1,49 @@
 
+.page-header, .page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: jr-spacer();
+}
+
+.page-header {
+
+  background-color: $jr-bg-dark;
+
+}
+
 .sub-header {
   color:$jr-emphasis;
-  display: block;
 }
 
 .header-logo {
-  width: 300px;
-  float: left;
+  flex: 0 1 300px;
+}
+
+.header-title {
+  flex:1 1 auto;
+  align-self: center;
 }
 
 .header-links {
+  position: fixed;
+  z-index: 10;
   font-style: italic;
-  //border: $jr-border;
-  list-style: none;
-  text-decoration: none;
-  a {
-    margin: 0 jr-spacer();
+  background-color: $jr-bg-dark;
+  font-size: 1.2rem;
+  right: 0;
+  top: 0;
+  padding: jr-spacer();
+  li {
+    float:left;
   }
+  a {
+    margin: 0 jr-spacer(0.5);
+  }
+}
+
+.page-footer {
+  background-color: $jr-bg-dark;
 }
 
 .footer-logo {

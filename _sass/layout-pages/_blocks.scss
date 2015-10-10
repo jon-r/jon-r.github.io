@@ -14,10 +14,6 @@
     justify-content: flex-start;
     overflow-x: auto;
   }
-  &.is-spread {
-    justify-content: space-between;
-    align-items: flex-end;
-  }
 
 }
 
@@ -51,13 +47,27 @@ $pad: jr-spacer(5);
   }
   h2, h3 {
     margin: jr-spacer() 0;
+    display: block;
   }
-
   img {
     margin:0 #{-$pad};
    // max-width: 100%;
     width: calc(100% + #{$pad * 2});
   }
+}
+
+ul.ul-slim {
+    -webkit-columns: 200px 3;
+       -moz-columns: 200px 3;
+            columns: 200px 3;
+    -webkit-column-gap: $pad;
+       -moz-column-gap: $pad;
+            column-gap: $pad;
+}
+ul.ul-wide {
+    -webkit-column-count:1;
+       -moz-column-count:1;
+            column-count:1;
 }
 
 .text-intro {

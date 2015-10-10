@@ -35,7 +35,7 @@ $serif: "aleo", Cambria, Times New Roman, Times, serif;
 %h-font {
   font-family: $serif;
   line-height: 1.1;
-  display: inline-block;
+  display: block;
   padding: 0.1em 0;
   //font-weight: bold;
 }
@@ -67,8 +67,11 @@ h4 {
   @extend %text-reset;
   @extend %h-font;
   font-size: 1.4em;
-  text-align: center;
+//  text-align: center;
+  strong {
+    color: $jr-emphasis;
   }
+}
 
 h5 {
   @extend %text-reset;

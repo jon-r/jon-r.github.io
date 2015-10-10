@@ -7,12 +7,13 @@ sort: 1
 layout: folio
 responsive: true
 
-intro: Red Hot Chilli Northwest specialise in the sale of refurbished commercial catering equipment. They needed a site that would show off the company’s regularly updating product list, serving both UK and across Europe.
+intro: 'Red Hot Chilli Northwest specialise in the sale of refurbished commercial catering equipment. They needed a site that would show off the company’s regularly updating product list, serving both UK and across Europe.<br>
+Sitelink: <a href="http://54.76.240.109/rhc/">Red Hot Chilli</a> <em>site not finalised</em>'
 
 images:
   - early_designs
   - brochure
-  - Two #3 tablet/mobile examples
+  - screens
 ---
 
 ###Web Design
@@ -45,10 +46,14 @@ From talking with customers, one of the biggest issues with selling commercial e
 
 Commercial equipment tends to be much larger than the domestic equivalent, and this is not always portrayed in the photos.
 
-I decided to add a dynamic scale reference on each item, so to help customers visualise how large equipment is. This demo works dynamically in javascript, but the site works on PHP to achieve the same result.
+I decided to add a dynamic scale reference on each item, so to help customers visualise how large equipment is.
+
+{% comment %}
+This demo works dynamically in javascript, but the site works on PHP to achieve the same result.
 
 ![scale](/images/placeholder.png)
 codepen here (scale)
+{% endcomment %}
 
 ####Icons & Colours
 

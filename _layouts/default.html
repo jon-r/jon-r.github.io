@@ -16,22 +16,21 @@
   </head>
 
 <body>
-<header class="block-dark is-spread">
+<header class="page-header">
+  <svg xmlns="http://www.w3.org/2000/svg" class="header-logo" viewbox="0 0 34 16">
+    <use xlink:href="#jr-logo" />
+  </svg>
   <div class="header-title">
-    <svg xmlns="http://www.w3.org/2000/svg" class="header-logo" viewbox="0 0 34 16">
-      <use xlink:href="#jr-logo" />
-    </svg>
-
-    <h1 class="page-header"><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
+    <h1 ><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
 
 <!--    <br>-->
     <h5 class="sub-header">{{ site.description }}</h5>
   </div>
 
   <nav class="header-links">
-    <h3><a href="{{ site.baseurl }}/">Folio</a></h3>
-    <h3><a href="{{ site.baseurl }}/about">About</a></h3>
-    <h3><a href="{{ site.baseurl }}/contact">Contact</a></h3>
+    <a href="{{ site.baseurl }}/">Folio</a>
+    <a href="{{ site.baseurl }}/about">About</a>
+    <a href="mailto:jon.richards@outlook.com">jon.richards@outlook.com</a>
   </nav>
 </header>
 
@@ -39,7 +38,7 @@
       {{ content }}
   </main>
 
-  <footer class="block-dark is-spread">
+  <footer class="page-footer">
     <p>&copy; Jon Richards 2015</p>
     <svg xmlns="http://www.w3.org/2000/svg" class="footer-logo" viewbox="0 0 40 16">
       <use xlink:href="#jr-logo-end" />
