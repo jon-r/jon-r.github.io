@@ -22,11 +22,13 @@ The Wordpress _Theme_ is the basis of the site and includes the style and custom
 
 ####Toolkit (Backend)
 
-- Functionality is primarily written in **PHP** with the **Wordpress API**.
+- Functionality is primarily written in **PHP**
+- The **Wordpress** API's have been used extensively to help in plugins.
 - I have used a **WinSCP** batch file to sync to the website via SSH.
 - Code was handwritten with **Brackets**.
 - My personal **Github** account was used for version control.
-- The site, including **MySQL database** is hosted on a self maintained **Amazon EC2** server.
+- The CMS is build on an **Access** database.
+- The site is hosted on a self maintained **Amazon EC2** server.
 
 ####Features
 

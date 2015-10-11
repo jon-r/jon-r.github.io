@@ -24,8 +24,9 @@ The ‘We Buy Catering’ marketing campaign serves as an advert to purchase equ
 ####Toolkit (Web)
 
 - **PHP** boilerplate to create multiple sites easily.
-- Style in **SCSS** with a hint of **Bourbon**.
-- The site was designed in **Photoshop CC** and handwritten with **Brackets**.
+- Style in **Sassy SCSS** with a hint of Bourbon.
+- The site was designed in **Photoshop CC**
+- Pages were Handwritten with **Brackets**.
 - Printed designs were created in **inDesign CC**.
 
 ####Features

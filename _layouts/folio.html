@@ -3,55 +3,22 @@ layout: default
 ---
 {% assign pages = (site.design | sort: 'sort') %}
 
-{% if page.responsive %}
-<section class="block-white" >
-  <div class="container" >
-    <svg class="screen-size-screen" height="100%" viewbox="0 0 840 640">
-      <use xlink:href="#samsung"/>
-      <image xlink:href="{{ site.baseurl }}/images/{{ page.ref }}/screen.jpg"
-             x="16" y="16" height="456" width="808"/>
-      <use xlink:href="#screen-gloss" />
-    </svg>
-    <svg class="screen-size-mobile" height="51%" viewbox="0 0 172 362">
-      <use xlink:href="#iphone5" />
-      <image xlink:href="{{ site.baseurl }}/images/{{ page.ref }}/mobile.jpg"
-             x="13" y="53" height="252" width="144" />
-      <use xlink:href="#mobile-gloss" />
-    </svg>
-    <svg class="screen-size-tablet" height="68%" viewbox="0 0 272 480">
-      <use xlink:href="#nexus7" />
-      <image xlink:href="{{ site.baseurl }}/images/{{ page.ref }}/tablet.jpg"
-             width="226" height="360" x="22" y="56" />
-      <use xlink:href="#tablet-gloss" />
-    </svg>
-  </div>
-</section>
-{% else %}
-
-<section class="block-white">
-  <picture class="tiles-image">
-    <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/banner-small.jpg" media="(max-width: 640px)">
-    <img src="{{ site.baseurl }}/images/{{ page.ref }}/banner.jpg">
-  </picture>
-</section>
-
-{% endif %}
 <section class="block">
-  <article class="text-container">
-    <h2>{{ page.title }}</h2>
-
-    <p class="text-intro">{{ page.intro }}</p>
-
-  </article>
-</section>
-
-<section class="block">
-  <picture class="tiles-image">
+  <picture class="tiles-image-head">
     <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/first-small.jpg" media="(max-width: 640px)">
     <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/first-hd.jpg" media="(min-width: 1024px)">
     <img  src="{{ site.baseurl }}/images/{{ page.ref }}/first.jpg" alt="{{ page.title }}">
   </picture>
 </section>
+
+<section class="block">
+  <article class="text-container">
+    <h2>{{ page.title }}</h2>
+
+    <p class="text-intro">{{ page.intro }}</p>
+  </article>
+</section>
+
 
 <ul class="block no-wrap" >
   {% for img in page.images %}

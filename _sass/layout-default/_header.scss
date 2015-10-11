@@ -2,7 +2,7 @@
 .page-header, .page-footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding: jr-spacer();
 }
 
@@ -22,7 +22,6 @@
 
 .header-title {
   flex:1 1 auto;
-  align-self: center;
 }
 
 .header-links {

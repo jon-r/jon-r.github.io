@@ -8,7 +8,7 @@ layout: folio
 responsive: true
 
 intro: 'Red Hot Chilli Northwest specialise in the sale of refurbished commercial catering equipment. They needed a site that would show off the company’s regularly updating product list, serving both UK and across Europe.<br>
-Sitelink: <a href="http://54.76.240.109/rhc/">Red Hot Chilli</a> <em>site not finalised</em>'
+Sitelink: <a href="http://54.76.240.109/rhc/">Red Hot Chilli</a> <em>not finalised</em>'
 
 images:
   - early_designs
@@ -24,7 +24,7 @@ The Website at Red Hot Chilli is an online catalogue, using a custom-made CMS sy
 
 - **SCSS** for style and **Gulp** for post-processing.
 - The site was handwritten with **Brackets**.
-- Designs and vector logos were developed in **Illustrator CC**.
+- Vector logos were developed in **Illustrator CC**.
 - My personal **Github** account was used for version control.
 
 ####Features
