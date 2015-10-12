@@ -56,7 +56,7 @@ One the main challenge for the site was targetting a fairly varied range of audi
 
 Originally, I just made a copy/paste collection of sites. I made individual tweaks manually. This worked but was messy to make any changes, and ended up with several inconsistencies between sites.
 
-I decided to create a PHP tamplate with a list of variables that covered each site. The core php was taken from a root location, and each page remained consistent and easily maintained. Instead of spending time readjusting several pages, linking sevaral images, etc, All that was needed was about 10 lines of php variables and a couple of extra pictures.
+I decided to create a PHP template with a list of variables that covered each site. The core php was taken from a root location, and each page remained consistent and easily maintained. Instead of spending time readjusting several pages, linking several images, etc, all that was needed was about 10 lines of php variables and a couple of extra pictures.
 
 ![framework template]({{ site.baseurl }}/images/{{ page.ref }}/template.jpg)
 
@@ -72,4 +72,4 @@ They were designed to match the blue/white style of the website, to encourage co
 
 In the future I want to work more SVG images into the site. The title banner is a good start since it is already fairly flat, but I would also like to create an animated "how it works". One idea is continuing the Cooker to Coin idea, and having an animated flow chart of the purchasing process, but this would take a lot of planning and design to be effective.
 
-Another, more realistic goal is giving the customer a way to upload images directly to us, either by form, dropbox, or something similar. I will need to research the best, easy to use method, that also does not hurt the performance of the site.
+Another, more realistic goal is giving the customer a way to upload images directly to us, either by form, dropbox or something similar. I will need to research the best, easy to use method that also does not hurt the performance of the site.
