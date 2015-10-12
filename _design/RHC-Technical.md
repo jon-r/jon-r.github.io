@@ -9,9 +9,9 @@ intro: 'The front end of the website needs to be built to the needs of the custo
 Sitelink: <a href="https://github.com/jon-r/jr-shop">Github Repository</a>'
 
 images:
+  - modular
   - shop_compile
   - shop_flow
-  - Two
 ---
 
 ###Web Development

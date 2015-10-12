@@ -1,0 +1,38 @@
+[class^="tiles-"] {
+  list-style: none;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.tiles-index {
+  background: $jr-bg-dark;
+  padding: jr-spacer();
+  margin: jr-spacer(2);
+  flex: 0 1 700px;
+  h3 {
+    @extend %a;
+  }
+}
+
+.tiles-image-head {
+  //flex:1 1 auto;
+  margin: 0 jr-spacer();
+  img {
+    max-height: 70vh;
+  }
+}
+
+.folio-gallery {
+  overflow-x: auto;
+  white-space: nowrap;
+  width:100%;
+}
+
+.tiles-folio {
+  display: inline-block;
+  width:calc(100%/3 - #{jr-spacer(3)});
+  min-width: 200px;
+  margin: jr-spacer();
+}

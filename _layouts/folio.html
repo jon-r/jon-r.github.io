@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign pages = (site.design | sort: 'sort') %}
 
-<section class="block">
+<section class="block-white">
   <picture class="tiles-image-head">
     <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/first-small.jpg" media="(max-width: 640px)">
     <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/first-hd.jpg" media="(min-width: 1024px)">
@@ -14,21 +14,18 @@ layout: default
 <section class="block">
   <article class="text-container">
     <h2>{{ page.title }}</h2>
-
     <p class="text-intro">{{ page.intro }}</p>
   </article>
-</section>
 
 
-<ul class="block no-wrap" >
-  {% for img in page.images %}
-  <li class="tiles-folio">
-    <img src="{{ site.baseurl }}/images/{{ page.ref }}/{{ img }}-thumb.jpg">
-  </li>
-  {% endfor %}
-</ul>
+  <ul class="folio-gallery" >
+    {% for img in page.images %}
+    <li class="tiles-folio">
+      <img src="{{ site.baseurl }}/images/{{ page.ref }}/{{ img }}-thumb.jpg">
+    </li>
+    {% endfor %}
+  </ul>
 
-<section class="block">
   <article class="text-container">
     {{ content }}
   </article>

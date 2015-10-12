@@ -15,14 +15,24 @@ body {
 
 }
 
-//main {
-//  margin-top: 160px;
-//}
 
-.container, %container {
-  width:100%;
-  max-width: 1600px;
+/*-- page blocks ----------------------------------------------------------------------*/
+
+[class^="block"] {
   position: relative;
-  margin:auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:stretch;
+  width:100%;
+  padding: jr-spacer();
 }
 
+.block-dark {
+  background: $jr-bg-dark;
+}
+
+.block-white {
+  background: $jr-bg-light;
+  color: $jr-text-dark;
+}

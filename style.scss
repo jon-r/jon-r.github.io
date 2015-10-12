@@ -1,9 +1,9 @@
 ---
 ---
 
-//
-// IMPORTS
-//
+/**************/
+/* IMPORTS    */
+/**************/
 
 @import "base/reset";
 @import "base/variables";
@@ -15,12 +15,14 @@
 
 @import "layout-default/header";
 @import "layout-default/main";
-@import "layout-pages/blocks";
+
 
 /*****************/
 /* PAGE SPECIFIC */
 /*****************/
 
+@import "layout-pages/markdown-template";
+@import "layout-pages/gallery-tiles";
 //@import "layout-pages/folio-screens";
 
 

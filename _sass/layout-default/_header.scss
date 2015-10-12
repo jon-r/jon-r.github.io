@@ -7,9 +7,13 @@
 }
 
 .page-header {
-
+  flex-direction: column;
   background-color: $jr-bg-dark;
-
+  padding-top: 3rem;
+  @include jr-size(screen) {
+    flex-direction: row;
+    padding-top: jr-spacer();
+  }
 }
 
 .sub-header {
@@ -17,7 +21,7 @@
 }
 
 .header-logo {
-  flex: 0 1 300px;
+  width:300px;
 }
 
 .header-title {
@@ -33,8 +37,9 @@
   right: 0;
   top: 0;
   padding: jr-spacer();
-  li {
-    float:left;
+  width:100%;
+  @include jr-size(screen) {
+    width: auto;
   }
   a {
     margin: 0 jr-spacer(0.5);
