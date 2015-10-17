@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    html {
+      font-family: Georgia, serif;
+      font-size: 20px;
+    }
+    .scroll-frame {
+      width: 400px;
+      height:600px;
+      overflow-y:scroll;
+     margin:20px auto;
+      border: solid 5px #99C7E4;
+    }
+    .block-header {
+      padding:1px 10px;
+    }
+    .block-blue, .block-white {
+      position: relative;
+      height: 95%;
+      padding: 10px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: calc(50% + 50px) 400px;
+    }
+    .block-blue, .block-header {
+      color: #fff;
+      background-color: #004C7E;
+    }
+    .block-blue {
+      background-image:url(/images/fixed-bg/coin.jpg);
+    }
+    .block-white {
+      background-image:url(/images/fixed-bg/oven.jpg);
+      background-color: #fff;
+      color: #004C7E;
+    }
+    h1 {
+      font-size: 2em;
+
+    }
+    h2 {
+      border-bottom: solid 5px;
+    }
+  </style>
+
+<body>
+  <article class="scroll-frame">
+    <header class="block-header">
+      <h1>Background Effect</h1>
+    </header>
+    <section class="block-white">
+      <h2>Scroll Me</h2>
+    </section>
+    <section class="block-blue">
+      <h2>Good Job</h2>
+    </section>
+  </article>
+</body>
+</html>

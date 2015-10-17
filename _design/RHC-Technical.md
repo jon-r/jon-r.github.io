@@ -28,7 +28,7 @@ The Wordpress _Theme_ is the basis of the site and includes the style and custom
 - Code was handwritten with **Brackets**.
 - My personal **Github** account was used for version control.
 - The CMS is build on an **Access** database.
-- The site is hosted on a self maintained **Amazon EC2** server.
+- The site is hosted on a self maintained Amazon **AWS** server.
 
 ####Features
 
@@ -47,14 +47,18 @@ The plugin consists of a number of separate php modules that combine to create t
 codepen here (code table to tile)
 {% endcomment %}
 
+_JR\_Shop\_Compile:_
 Product info is recorded on the Access database. Key specs, such as power supply, product model number and dimensions are separated form a general description. I needed to modify some parts of the product table to include website specific information, such as “live on site”, but mostly the table remained untouched, and little redevelopment was needed on existing access forms.
 
 The core function of the CMS is to convert the database into user friendly output. This included clear specs and descriptions. A large number of customers still prefer measurements in feet and inches, so I have made sure to include a simple mm to feet/inch converter.
 
 ####WYSIWYG Carousel editor
 
+<span class="thumbnail-frame" >
 ![carousel editor]({{ site.baseurl }}/images/{{ page.ref }}/carousel.jpg)
+</span>
 
+_JR\_Carousel:_
 We added several forms in access to deal with the additional website features. For example, I wanted a way to easily design the carousel slidess. Working with VBA I managed to simulate the template in an access form. This meant new slides could be written without even logging into WordPress.
 
 The carousel is animated through a simple timer in JavaScript, shuffling classes that slide in and out the templates. I have used extra css classes, (added by php) to format text in a few basic layouts.
@@ -64,36 +68,45 @@ The carousel is animated through a simple timer in JavaScript, shuffling classes
 ![cache images speed boost](/images/placeholder.png)
 {% endcomment %}
 
+_JR\_Mini\_Cache:_
 The site is fairly speedy, but I knew I could make it faster with caching products. I created a super light cache system that saves blocks of each page as html. Thanks to html caching, I have reduced mysql requests on the average page by 80%, and each page loads around 20% faster.
 
-The images are uploaded to the site at 1500px. Since this is largely overkil for thumbnails, I have the site generate the 150px thumbnails as needed. Some items have multiple images that are rarely viewed, and the thumbnail generator only creates smaller images when needed.
+The images are uploaded to the site at 1500px. Since this is overkill for photos that are seen as thumbnails most of the time, I have the site generate the 150px thumbnails as needed. Some items have multiple images that are rarely viewed, and the thumbnail generator only creates smaller images when needed.
 
-The main issue with cacheing items is the best way to make updates. I dont want to make a small price change on one oven and have to reset the cache on everything, which is how the older Red Hot Chilli site worked. I have used VBA on the database to log changes, which links to a simple php script securely target and refresh only necessary pages.
+_JR\_File\_Cleanup:_
+The main issue with caching items is the best way to make updates. I dont want to make a small price change on one oven and have to reset the cache on everything, which is how the older Red Hot Chilli site worked. I have used VBA on the database to log changes, which links to a simple php script securely target and refresh only necessary pages.
+
+This module also tidies up old images that are no longer viewable on the site. The auto-generated thumbnails are periodically swept, removing images that are either inactive or havent been viewed for a while.
 
 ####Other Functions
-_JR\_Image\_Sync_
 
-I made a short batch script to upload all images via SSH. This is much faster than previous CMS uploading methods I have used in the past. The one issue is that product Images must be organised by reference number. However, this encourages good naming conventions and image cataloguing, which can never be a bad thing.
-
-![image sync]({{ site.baseurl }}/images/{{ page.ref }}/img_sync.jpg)
-
-_JR\_Scale\_Ref_
-
-The scale reference is also dynamically calculated in php. Using an average human height as point of reference, all dimensions are scaled proportionally. After a few quick calculations, the height and width is used in a simple SVG image.
-
-![scale reference]({{ site.baseurl }}/images/{{ page.ref }}/img_scale.jpg)
-
-_JR\_Validate_
+_JR\_Validate:_
 The first point of call on every page on the site. Ensuring page links are valid, pointing at correctly accessible products, and whitelisting queries for security. Any URL string can go IN to the validation, but only secure results come out.
 
-_JR\_Autocomplete_
+<span class="thumbnail-frame" >
+![image sync]({{ site.baseurl }}/images/{{ page.ref }}/img_sync.jpg)
+</span>
+
+_JR\_Image\_Sync:_
+I made a short batch script to upload all images via SSH. This is much faster than previous CMS uploading methods I have used in the past.
+
+The one issue is that product Images must be organised by reference number. However, this encourages good naming conventions and image cataloguing, which can never be a bad thing.
+
+<span class="thumbnail-frame" >
+![scale reference]({{ site.baseurl }}/images/{{ page.ref }}/img_scale.jpg)
+</span>
+
+_JR\_Scale\_Ref:_
+The scale reference is also dynamically calculated in php. Using an average human height as point of reference, all dimensions are scaled proportionally. After a few quick calculations, the height and width is used in a simple SVG image.
+
+_JR\_Autocomplete:_
 Generates an AJAX smart search option for the customer. Gathers information from popular brands and categories to help the customer find what they are looking for.
 
 {% comment %}
 ![Autocomplete](/images/placeholder.png)
 {% endcomment %}
 
-_JR\_Shortcodes_
+_JR\_Shortcodes:_
 Using the Wordpress Shortcodes API, I have setup the site templates as modular elements. Blocks of the page can then be rearranged via the wordpress content editor. This also toggles the cache on specific pages where needed.
 
 
@@ -105,6 +118,4 @@ Using the Wordpress Shortcodes API, I have setup the site templates as modular e
 - contact form validation (contact_forms)
 {% endcomment %}
 
-###Future
-Lazy loading images/product lists (these are biggest performance hits on site)
 

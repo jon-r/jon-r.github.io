@@ -76,6 +76,9 @@ exclude:
     - jekyll-buildit.bat
     - jekyll-viewit.bat
     - _old
+    - node_modules
+    - package.json
+    - gulpfile.js
 
 collections:
   design:

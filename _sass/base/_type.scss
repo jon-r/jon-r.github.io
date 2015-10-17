@@ -42,7 +42,7 @@ $serif: "aleo", Cambria, Times New Roman, Times, serif;
 
 %p-font {
   font-family: $sans-serif;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 h1 {
@@ -79,21 +79,13 @@ h5 {
   font-size: 1em;
 }
 
-
 p {
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   text-align: justify;
 }
 
 a, %a {
-  color: inherit;
+  color: lighten($jr-emphasis, 10%);
   cursor: pointer;
   text-decoration: none;
   border-bottom: solid 2px $jr-emphasis;
-  &:hover, &:active {
-    color: $jr-emphasis;
-  }
 }
