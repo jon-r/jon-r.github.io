@@ -34,7 +34,7 @@ The ‘We Buy Catering’ marketing campaign serves as an advert to purchase equ
 - Blue monochrome colour palette.
 - Minimal asymmetric design, designed to be quick to scan information.
 - SEO friendly content, responsive design.
-- Simple php template allows quick duplication of design for different themes.
+- Simple PHP template allows quick duplication of design for different themes.
 
 ####Layout
 
@@ -55,11 +55,11 @@ The site uses a monochromatic colour scheme. As well as a contrast to the reds o
 ![framework template]({{ site.baseurl }}/images/{{ page.ref }}/template.jpg)
 </span>
 
-One the main challenge for the site was targetting a fairly varied range of audiences. I wanted to encourage customers and have more focused sites to appeal to a variety of targets. The main pages focused on areas in the northwest (Manchester, Liverpool, Chester) with sub pages targetted at different catering markets (Pubs, Farm Shops, Cafes)
+One the main challenge for the site was targeting a fairly varied range of audiences. I wanted to encourage customers and have more focused sites to appeal to a variety of targets. The main pages focused on areas in the northwest (Manchester, Liverpool, Chester) with subpages targeted at different catering markets (Pubs, Farm Shops, Cafes)
 
 Originally, I just made a copy/paste collection of sites. I made individual tweaks manually. This worked but was messy to make any changes, and ended up with several inconsistencies between sites.
 
-I decided to create a PHP template with a list of variables that covered each site. The core php was taken from a root location, and each page remained consistent and easily maintained. Instead of spending time readjusting several pages, linking several images, etc, all that was needed was about 10 lines of php variables and a couple of extra pictures.
+I decided to create a PHP template with a list of variables that covered each site. The core PHP was taken from a root location, and each page remained consistent and easily maintained. Instead of spending time readjusting several pages, linking several images, etc., all that was needed was about 10 lines of PHP variables and a couple of extra pictures.
 
 
 

@@ -6,11 +6,11 @@ title: You're up and running!
 
 # snippet list
 - javascript smart gallery
-- javascript/php search
+- javascript/PHP search
 - mysql -> access -> winSCP -> website
-- php/mysql database in/out
-- php image setup
-- javascript/php carousel
-- svg/php scale
+- PHP/mysql database in/out
+- PHP image setup
+- javascript/PHP carousel
+- svg/PHP scale
 - "css loader"
 

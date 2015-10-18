@@ -4,7 +4,7 @@ mysql
 access
 scss
 javascript
-wordpress
+WordPress
 cmd
 photoshop
 illustrator
