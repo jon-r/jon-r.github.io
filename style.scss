@@ -16,22 +16,17 @@
 @import "layout-default/header";
 @import "layout-default/main";
 
-
 /*****************/
 /* PAGE SPECIFIC */
 /*****************/
 
+@import "layout-pages/index";
+@import "layout-pages/folio";
 @import "layout-pages/markdown-template";
-@import "layout-pages/gallery-tiles";
 //@import "layout-pages/folio-screens";
 
 /**************/
 /* ICONS    */
 /**************/
 @import "base/svg-icons";
-
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
 

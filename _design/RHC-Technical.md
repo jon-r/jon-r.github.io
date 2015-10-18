@@ -54,7 +54,7 @@ The core function of the CMS is to convert the database into user friendly outpu
 
 ####WYSIWYG Carousel editor
 
-<span class="thumbnail-frame" >
+<span class="half-span can-zoom" >
 ![carousel editor]({{ site.baseurl }}/images/{{ page.ref }}/carousel.jpg)
 </span>
 
@@ -83,7 +83,7 @@ This module also tidies up old images that are no longer viewable on the site. T
 _JR\_Validate:_
 The first point of call on every page on the site. Ensuring page links are valid, pointing at correctly accessible products, and whitelisting queries for security. Any URL string can go IN to the validation, but only secure results come out.
 
-<span class="thumbnail-frame" >
+<span class="half-span can-zoom" >
 ![image sync]({{ site.baseurl }}/images/{{ page.ref }}/img_sync.jpg)
 </span>
 
@@ -92,7 +92,7 @@ I made a short batch script to upload all images via SSH. This is much faster th
 
 The one issue is that product Images must be organised by reference number. However, this encourages good naming conventions and image cataloguing, which can never be a bad thing.
 
-<span class="thumbnail-frame" >
+<span class="half-span can-zoom" >
 ![scale reference]({{ site.baseurl }}/images/{{ page.ref }}/img_scale.jpg)
 </span>
 

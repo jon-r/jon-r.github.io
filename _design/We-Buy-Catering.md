@@ -51,7 +51,7 @@ The site uses a monochromatic colour scheme. As well as a contrast to the reds o
 
 ####Technical
 
-<span class="thumbnail-frame" >
+<span class="half-span can-zoom" >
 ![framework template]({{ site.baseurl }}/images/{{ page.ref }}/template.jpg)
 </span>
 

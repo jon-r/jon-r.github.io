@@ -6,68 +6,77 @@ var liIcons = document.querySelectorAll('li > strong'),
 for (i = 0; i < listCount; i++) {
   li = liIcons[i].parentElement;
   liText = liIcons[i].textContent;
-//  icon = iconSrc + 'ico-' + liText.substr(0, 3).toLowerCase();
-//
-//  newIcon = document.createElement('img');
-//  newIcon.setAttribute('class', 'list-icon');
-//  newIcon.setAttribute('src', icon);
-//  newIcon.setAttribute('title', liText);
   icon = liText.substr(0, 4).toLowerCase();
 
-  li.setAttribute('class', 'list-icon ' + icon);
+  li.className = 'list-icon ' + icon;
 }
 
-/* modal popups ----------------------------------------------------------------------
-// eg zoom and enhance
-var $imgGalleryModal  = $('#js-gallery-modal'),
-    $imgGalleryOpen   = $('#js-gallery-zoom'),
-    $imgGalleryClose  = $imgGalleryModal.find('.modal-close');
-    $buyModal         = $('#js-buy-modal'),
-    $buyModalOpen     = $('#js-buy-btn'),
-    $buyModalClose    = $buyModal.find('.modal-close'),
-    $queryModal         = $('#js-query-modal'),
-    $queryModalOpen     = $('#js-query-btn'),
-    $queryModalClose    = $queryModal.find('.modal-close');
+/*Modals*/
+var modal = document.getElementById('js-modal'),
+  m_first = document.getElementById('m-first'),
+  m_close = document.getElementById('m-close'),
+  m_list = document.getElementById('m-list'),
+  canZoom = document.querySelectorAll('.can-zoom > img'),
+  zoomCount = canZoom.length;
 
-function modalOpen(e) {
-  e.addClass('is-active')
-}
-function modalOpenSmall(e) {
-  e.addClass('is-active-small');
-}
-function modalClose(e) {
-  e.removeClass('is-active');
-  e.removeClass('is-active-small');
-}
+for (i = 0; i < zoomCount; i++) {
+  canZoom[i].onclick=function(e) {
+    x = (e.clientX - 40) + "px";
+    y = (e.clientY - 40) + "px";
 
-$imgGalleryOpen.click(function() {
-  $getImgSrc = $imgGalleryMain.find('img').attr('src');
-  $bigImgSrc = $getImgSrc.replace('gallery-tile','gallery');
-
-  if ($imgGalleryModal.find('img').length) {
-
-    $imgGalleryModal.find('img').attr('src',$bigImgSrc);
-  } else {
-    $bigImgNew = '<img src="' + $bigImgSrc + '" >';
-    $imgGalleryModal.append($bigImgNew);
+    modalSmall(x,y);
+    modal.className = 'modal is-open';
+    window.setTimeout(modalFull, 5);
+    setMainImg(e);
+    fillGallery();
   }
-  modalOpen($imgGalleryModal);
-});
+}
 
-$imgGalleryClose.click(function() {
-  modalClose($imgGalleryModal);
-});
+m_list.onclick=function(e) {
+  if (e.target.tagName == 'IMG') {
+    setMainImg(e);
+  }
+}
 
-$buyModalOpen.click(function() {
-  modalOpenSmall($buyModal)
-})
-$queryModalOpen.click(function() {
-  modalOpenSmall($queryModal)
-})
-$buyModalClose.click(function() {
-  modalClose($buyModal);
-});
-$queryModalClose.click(function() {
-  modalClose($queryModal);
-});
-*/
+m_close.onclick=function(e) {
+  console.log(e);
+  x = (e.clientX - 40) + "px";
+  y = (e.clientY - 40) + "px";
+  modalSmall(x,y);
+  window.setTimeout(function() {
+    modal.className = 'modal';
+  }, 500);
+}
+
+function modalSmall(x,y) {
+  modal.style.left = x;
+  modal.style.top = y;
+  modal.style.width = '50px';
+  modal.style.height = '50px';
+}
+
+function modalFull() {
+  modal.style.left = '5vw';
+  modal.style.top = '5vh';
+  modal.style.width = '90vw';
+  modal.style.height = '90vh';
+}
+
+function setMainImg(e) {
+  getThumb = e.target.src;
+  getFull = getThumb.replace('-thumb', '');
+  m_first.src = getFull;
+}
+
+function fillGallery() {
+  //insert images to modal gallery
+  if (m_list.children.length == 0) {
+    for (i = 0; i < zoomCount; i++) {
+      li = document.createElement('li');
+      img = canZoom[i].cloneNode();
+      li.appendChild(img);
+      m_list.appendChild(li);
+    }
+  }
+}
+

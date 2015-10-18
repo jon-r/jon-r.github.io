@@ -48,3 +48,17 @@ table {
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+//Jon extras
+li {
+  list-style: none;
+  img {
+    width:100%;
+    display:block;
+  }
+}

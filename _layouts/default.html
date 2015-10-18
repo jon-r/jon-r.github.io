@@ -18,7 +18,7 @@
 <body>
 <header class="page-header">
   <svg xmlns="http://www.w3.org/2000/svg" class="header-logo" viewbox="0 0 34 16">
-    <use xlink:href="#jr-logo" />
+    <use xlink:href="#jr-logo" ></use>
   </svg>
   <div class="header-title">
     <h1 ><a href="{{ site.baseurl }}/">{{ site.name }} </a></h1>
@@ -41,13 +41,13 @@
   <footer class="page-footer">
     <p>&copy; Jon Richards 2015</p>
     <svg xmlns="http://www.w3.org/2000/svg" class="footer-logo" viewbox="0 0 40 16">
-      <use xlink:href="#jr-logo-end" />
+      <use xlink:href="#jr-logo-end" ></use>
     </svg>
   </footer>
 
   {% include analytics.html %}
   {% include svg.html %}
   {%if page.responsive%}{% include svg-screens.html %}{% endif %}
-  <script type="text/javascript" src="/script/script.js" ></script>
+  <script type="text/javascript" src="/script/script.min.js" ></script>
 </body>
 </html>

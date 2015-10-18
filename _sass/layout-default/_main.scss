@@ -36,3 +36,116 @@ body {
   background: $jr-bg-light;
   color: $jr-text-dark;
 }
+
+/*thumbnail modals --------------------------------------------------------------------*/
+
+.can-zoom {
+  background: $jr-emphasis;
+  border: solid 4px $jr-emphasis;
+  cursor: zoom-in;
+  overflow: hidden;
+  img {
+    opacity:1;
+    transition: 1s ease-in-out;
+  }
+  &:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+.modal {
+  position: fixed;
+  background: $jr-bg-dark;
+  padding: jr-spacer(2);
+  z-index: 10;
+  height:20px;
+  width:20px;
+  overflow: hidden;
+  display: none;
+  > img {
+    border: solid 2px $jr-bg-med;
+    max-height: 75%;
+    background: jr-blue(1);
+    max-width: 100%;
+    @supports(object-fit: contain) {
+      width:100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+  }
+}
+
+.modal.is-open {
+  display: block;
+  transition: 600ms ease-in-out;
+  height:auto;
+  width:auto;
+  //border-radius: 0;
+  &::before {
+    content:"";
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background:rgba(jr-blue(1), 0.75);
+    z-index: -1;
+  }
+}
+
+
+.modal-thumbs {
+  position: absolute;
+  bottom: 1rem;
+  height: 20%;
+  width: calc(100% - 1rem);
+  display:flex;
+  justify-content: flex-start;
+  align-items:flex-end;
+  overflow-x: auto;
+  overflow-y: hidden;
+  li {
+    flex: 1 0 200px;
+    width: 25%;
+    max-height: 100%;
+    margin-right: 1rem;
+
+  }
+  img {
+    cursor: pointer;
+    height: 100%;
+    border: solid 2px $jr-bg-med;
+    &:hover {
+      border: solid 2px $jr-emphasis;
+    }
+  }
+}
+
+
+
+.modal-close {
+  top: 1rem;
+  position: absolute;
+  height: 24px;
+  width:64px;
+  right: 1rem;
+  z-index:15;
+  text-align: center;
+
+  cursor: pointer;
+  background: rgba($jr-bg-dark,0.75);
+  @extend %a;
+  @include jr-size(screen) {
+    width: 96px;
+    height:36px;
+    font-size: 1.5rem;
+  }
+}
+
+.is-open .modal-close {
+//  display: block;
+}

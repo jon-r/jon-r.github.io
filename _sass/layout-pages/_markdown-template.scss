@@ -34,12 +34,12 @@ p > img {
     width: calc(100% + #{$pad * 2});
   }
 
-.thumbnail-frame {
+.half-span {
   float:left;
-  min-width:300px;
+  min-width:250px;
   vertical-align: top;
   width:50%;
-  padding: 1rem;
+  margin: 1rem;
   img {
     width:100% ;
   }

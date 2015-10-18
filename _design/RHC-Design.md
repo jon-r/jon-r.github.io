@@ -36,7 +36,7 @@ The Website at Red Hot Chilli is an online catalogue, using a custom-made CMS sy
 
 ####Layout
 
-<span class="thumbnail-frame" >
+<span class="half-span can-zoom" >
   ![style guide]({{ site.baseurl }}/images/{{ page.ref }}/style-thumb.png)
 </span>
 

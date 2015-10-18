@@ -1,0 +1,9 @@
+.tiles-index {
+  background: $jr-bg-dark;
+  padding: jr-spacer();
+  margin: jr-spacer(2);
+  flex: 0 1 700px;
+  h3 {
+    @extend %a;
+  }
+}

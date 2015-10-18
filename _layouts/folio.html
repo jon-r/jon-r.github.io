@@ -4,10 +4,10 @@ layout: default
 {% assign pages = (site.design | sort: 'sort') %}
 
 <section class="block-white">
-  <picture class="tiles-image-head">
+  <picture class="folio-hero">
     <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/first-small.jpg" media="(max-width: 640px)">
-    <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/first-hd.jpg" media="(min-width: 1024px)">
-    <img  src="{{ site.baseurl }}/images/{{ page.ref }}/first.jpg" alt="{{ page.title }}">
+    <source srcset="{{ site.baseurl }}/images/{{ page.ref }}/first.jpg" media="(max-width: 1024px)">
+    <img  src="{{ site.baseurl }}/images/{{ page.ref }}/first-hd.jpg" alt="{{ page.title }}">
   </picture>
 </section>
 
@@ -20,10 +20,33 @@ layout: default
 
   <ul class="folio-gallery" >
     {% for img in page.images %}
-    <li class="tiles-folio">
+    <li class="tiles-thumbnail can-zoom">
       <img src="{{ site.baseurl }}/images/{{ page.ref }}/{{ img }}-thumb.jpg">
     </li>
     {% endfor %}
+
+
+    <div id="js-modal" class="modal " >
+      <img id="m-first" src="">
+      <div id="m-close" class="modal-close" >Close</div>
+      <ul id="m-list" class="modal-thumbs">
+<!--
+      {% for img in page.images %}
+        <li>
+          <img src="{{ site.baseurl }}/images/{{ page.ref }}/{{ img }}-thumb.jpg">
+        </li>
+      {% endfor %}
+      {% for img in page.images %}
+        <li>
+          <img src="{{ site.baseurl }}/images/{{ page.ref }}/{{ img }}-thumb.jpg">
+        </li>
+      {% endfor %}
+-->
+      </ul>
+    </div>
+
+
+
   </ul>
 
   <article class="text-container">
