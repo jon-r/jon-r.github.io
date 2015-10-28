@@ -8,7 +8,7 @@ layout: folio
 responsive: true
 
 intro: 'Red Hot Chilli Northwest specialise in the sale of refurbished commercial catering equipment. They needed a site that would show off the company’s regularly updating product list, serving both UK and across Europe.<br>
-Sitelink: <a href="http://54.76.240.109/rhc/">Red Hot Chilli</a> <em>not finalised</em>'
+Sitelink: <a href="http://www.redhotchilli.catering">Red Hot Chilli</a>'
 
 images:
   - early_designs
